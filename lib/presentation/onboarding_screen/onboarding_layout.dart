@@ -1,7 +1,9 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
 import 'package:cookbook/extensions/extensions.dart';
 import 'package:cookbook/generated/assets/assets.gen.dart';
 import 'package:cookbook/generated/l10n.dart';
+import 'package:cookbook/navigation/app_router.dart';
 import 'package:cookbook/widgets/molecules/custom_button.dart';
 import 'package:cookbook/widgets/molecules/gradient_background.dart';
 import 'package:cookbook/widgets/organisms/screen_side_offset.dart';
@@ -65,9 +67,7 @@ class _OnboardingLayoutState extends State<OnboardingLayout> {
                       style: context.theme.textTheme.headlineMedium
                           ?.copyWith(color: DefaultPalette.kDarkGreen),
                     ),
-                    onPressed: () {
-                      // TODO(Voloymyr): Handle button press
-                    },
+                    onPressed: () => context.router.push(const SignUpRoute()),
                   ),
                   spacing12,
                   CustomButton.outline(
@@ -75,9 +75,7 @@ class _OnboardingLayoutState extends State<OnboardingLayout> {
                       S.of(context).logIn,
                       style: context.theme.textTheme.headlineMedium,
                     ),
-                    onPressed: () {
-                      // TODO(Voloymyr): Handle button press
-                    },
+                    onPressed: () => context.router.push(const LogInRoute()),
                   ),
                   spacing40,
                 ],

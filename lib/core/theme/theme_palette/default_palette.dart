@@ -26,5 +26,14 @@ class DefaultPalette {
   static const kDarkGreen = Color(0xFF040F0B);
 
   static const startGradientColor = Color(0xFF18593F);
+
   static const endGradientColor = Color(0xFF42CF4C);
+
+  static const inactiveTextColor = Color(0xFFADA4A5);
+
+  static const backgroundFormColor = Color(0xFFF7F8F8);
+
+  static const borderColor = Color(0xFFDDDADA);
+
+  static const errorColor = Color(0xFFE43C18);
 }

@@ -48,11 +48,11 @@ class CustomButton extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Color(0xFF75DB7E),
               Color(0xFF18593F),
+              Color(0xFF75DB7E),
             ],
             stops: [0.0, 1.0],
-            transform: GradientRotation(274.34 * (pi / 180)),
+            // transform: GradientRotation(274.34 * (pi / 180)),
           ),
           borderRadius: BorderRadius.circular(99),
           boxShadow: const [

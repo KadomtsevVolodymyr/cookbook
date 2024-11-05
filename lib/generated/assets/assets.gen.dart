@@ -33,11 +33,63 @@ class $AssetsLogoGen {
   List<AssetGenImage> get values => [logo];
 }
 
+class $AssetsSvgGen {
+  const $AssetsSvgGen();
+
+  /// File path: assets/svg/apple_logo.svg
+  SvgGenImage get appleLogo => const SvgGenImage('assets/svg/apple_logo.svg');
+
+  /// File path: assets/svg/arrow-left.svg
+  SvgGenImage get arrowLeft => const SvgGenImage('assets/svg/arrow-left.svg');
+
+  /// File path: assets/svg/check_box_false.svg
+  SvgGenImage get checkBoxFalse =>
+      const SvgGenImage('assets/svg/check_box_false.svg');
+
+  /// File path: assets/svg/check_box_true.svg
+  SvgGenImage get checkBoxTrue =>
+      const SvgGenImage('assets/svg/check_box_true.svg');
+
+  /// File path: assets/svg/facebook_logo.svg
+  SvgGenImage get facebookLogo =>
+      const SvgGenImage('assets/svg/facebook_logo.svg');
+
+  /// File path: assets/svg/google_logo.png
+  AssetGenImage get googleLogo =>
+      const AssetGenImage('assets/svg/google_logo.png');
+
+  /// File path: assets/svg/hide_password.svg
+  SvgGenImage get hidePassword =>
+      const SvgGenImage('assets/svg/hide_password.svg');
+
+  /// File path: assets/svg/information_error.svg
+  SvgGenImage get informationError =>
+      const SvgGenImage('assets/svg/information_error.svg');
+
+  /// File path: assets/svg/show_password.svg
+  SvgGenImage get showPassword =>
+      const SvgGenImage('assets/svg/show_password.svg');
+
+  /// List of all assets
+  List<dynamic> get values => [
+        appleLogo,
+        arrowLeft,
+        checkBoxFalse,
+        checkBoxTrue,
+        facebookLogo,
+        googleLogo,
+        hidePassword,
+        informationError,
+        showPassword
+      ];
+}
+
 class Assets {
   Assets._();
 
   static const $AssetsImagesGen images = $AssetsImagesGen();
   static const $AssetsLogoGen logo = $AssetsLogoGen();
+  static const $AssetsSvgGen svg = $AssetsSvgGen();
 }
 
 class AssetGenImage {

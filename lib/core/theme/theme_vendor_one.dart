@@ -23,30 +23,27 @@ class VendorThemeOneLight extends VendorOneCoreTheme {
     return ThemeData(
       useMaterial3: false,
       colorScheme: const ColorScheme.light(
-        brightness: Brightness.light,
         primary: DefaultPalette.white,
-        onPrimary: Colors.white,
-        secondary: Color(0xFF03DAC6),
-        onSecondary: Colors.black,
-        surface: Colors.white,
         onSurface: Color(0xFF333333),
-        error: Color(0xFFB00020),
-        onError: Colors.white,
       ),
       appBarTheme: const AppBarTheme(
         shadowColor: Colors.black,
         color: DefaultPalette.white,
       ),
       iconTheme: const IconThemeData(color: DefaultPalette.white),
-      inputDecorationTheme: const InputDecorationTheme(
+      inputDecorationTheme: InputDecorationTheme(
+        contentPadding: EdgeInsets.only(left: 14.0.s),
         errorBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: DefaultPalette.white),
+          borderSide: const BorderSide(color: DefaultPalette.errorColor),
+          borderRadius: BorderRadius.circular(14.0.s),
         ),
         focusedErrorBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: DefaultPalette.white, width: 2.0),
+          borderSide: const BorderSide(color: DefaultPalette.errorColor),
+          borderRadius: BorderRadius.circular(14.0.s),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: DefaultPalette.white, width: 2.0),
+          borderRadius: BorderRadius.circular(14.0.s),
+          borderSide: const BorderSide(color: DefaultPalette.inactiveTextColor),
         ),
       ),
       textTheme: TextTheme(
@@ -87,15 +84,13 @@ class VendorThemeOneLight extends VendorOneCoreTheme {
         ),
         titleMedium: TextStyle(
           color: DefaultPalette.black,
-          fontWeight: FontWeight.w400,
+          fontWeight: FontWeight.w500,
           fontSize: 14.0.s,
-          height: 17 / 15,
         ),
         titleSmall: const TextStyle(
-          color: DefaultPalette.black,
-          fontWeight: FontWeight.w600,
-          fontSize: 13,
-          height: 16 / 13,
+          color: DefaultPalette.kDarkGreen,
+          fontWeight: FontWeight.w300,
+          fontSize: 12,
         ),
         labelLarge: const TextStyle(
           color: DefaultPalette.black,
@@ -109,11 +104,10 @@ class VendorThemeOneLight extends VendorOneCoreTheme {
           fontSize: 15,
           height: 18 / 15,
         ),
-        labelSmall: const TextStyle(
+        labelSmall: TextStyle(
           color: DefaultPalette.black,
-          fontSize: 20,
-          fontWeight: FontWeight.w700,
-          height: 24 / 22,
+          fontSize: 14.0.s,
+          fontWeight: FontWeight.w400,
         ),
         bodyLarge: const TextStyle(
           color: DefaultPalette.black,

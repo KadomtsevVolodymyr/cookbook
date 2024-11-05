@@ -52,50 +52,43 @@ class VendorThemeOneLight extends VendorOneCoreTheme {
       textTheme: TextTheme(
         displayLarge: TextStyle(
           color: DefaultPalette.white,
-          fontWeight: FontWeight.w400,
-          fontSize: 23.0.s,
-          fontFamily: FontFamily.amarante,
+          fontWeight: FontWeight.bold,
+          fontSize: 40.0.s,
         ),
         displayMedium: TextStyle(
           color: DefaultPalette.white,
           fontWeight: FontWeight.w400,
           fontSize: 16.0.s,
-          fontFamily: FontFamily.alatsi,
         ),
         displaySmall: TextStyle(
           color: DefaultPalette.white,
           fontWeight: FontWeight.w400,
           fontSize: 15.0.s,
-          fontFamily: FontFamily.amarante,
         ),
         headlineLarge: TextStyle(
           color: DefaultPalette.white,
-          fontWeight: FontWeight.w400,
+          fontWeight: FontWeight.w600,
           fontSize: 20.0.s,
-          fontFamily: FontFamily.alatsi,
         ),
         headlineMedium: TextStyle(
           color: DefaultPalette.white,
-          fontWeight: FontWeight.w400,
-          fontSize: 18.0.s,
-          fontFamily: FontFamily.alatsi,
+          fontWeight: FontWeight.w600,
+          fontSize: 16.0.s,
         ),
         headlineSmall: const TextStyle(
           color: DefaultPalette.black,
           fontWeight: FontWeight.w400,
-          fontFamily: FontFamily.alatsi,
           fontSize: 20,
         ),
-        titleLarge: const TextStyle(
+        titleLarge: TextStyle(
           color: DefaultPalette.white,
           fontWeight: FontWeight.w400,
-          fontSize: 20,
-          fontFamily: FontFamily.amarante,
+          fontSize: 16.0.s,
         ),
-        titleMedium: const TextStyle(
+        titleMedium: TextStyle(
           color: DefaultPalette.black,
-          fontWeight: FontWeight.w700,
-          fontSize: 15,
+          fontWeight: FontWeight.w400,
+          fontSize: 14.0.s,
           height: 17 / 15,
         ),
         titleSmall: const TextStyle(
@@ -140,7 +133,7 @@ class VendorThemeOneLight extends VendorOneCoreTheme {
           fontSize: 14,
           height: 17 / 14,
         ),
-      ),
+      ).apply(fontFamily: FontFamily.poppins),
     );
   }
 

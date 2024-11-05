@@ -22,6 +22,12 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "username": MessageLookupByLibrary.simpleMessage("Username")
+        "logIn": MessageLookupByLibrary.simpleMessage("Log in"),
+        "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
+        "username": MessageLookupByLibrary.simpleMessage("Username"),
+        "welcomeToCookbook":
+            MessageLookupByLibrary.simpleMessage("Welcome to Cookbook"),
+        "welcome_description": MessageLookupByLibrary.simpleMessage(
+            "Discover nutritious, delicious, and easy-to-make recipes tailored to your lifestyle. Whether you\'re looking to fuel up, tone up, or simply eat healthier, Cookbook is here to guide you every step of the way.!")
       };
 }

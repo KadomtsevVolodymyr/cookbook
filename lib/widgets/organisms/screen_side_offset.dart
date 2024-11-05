@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:cookbook/extensions/extensions.dart';
+import 'package:flutter/material.dart';
 
 enum ScreenOffsetSide { left, right }
 
@@ -39,7 +39,7 @@ class ScreenSideOffset extends StatelessWidget {
 
   static double get defaultSmallMargin => 16.0.s;
 
-  static double get defaultLargeMargin => 22.0.s;
+  static double get defaultLargeMargin => 24.0.s;
 
   final Widget child;
   final double margin;

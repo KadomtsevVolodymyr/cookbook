@@ -1,12 +1,12 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:cookbook/core/theme/theme_container.dart';
 import 'package:cookbook/domain/repositories/solution_repository_interface.dart';
 import 'package:cookbook/generated/l10n.dart';
 import 'package:cookbook/navigation/app_router.dart';
 import 'package:cookbook/solution_injection.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:value_provider/value_provider.dart';
 
@@ -35,7 +35,7 @@ class AppEntry extends StatelessWidget {
     return MultiProvider(
       providers: SolutionInjection.getDiList(context),
       child: ScreenUtilInit(
-        designSize: const Size(393, 852),
+        designSize: const Size(395, 812),
         child: Builder(
           builder: (BuildContext context) {
             return ValueProvider<ThemeMode, ThemeMode>(

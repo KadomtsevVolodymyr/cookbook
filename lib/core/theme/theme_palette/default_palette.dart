@@ -22,4 +22,9 @@ class DefaultPalette {
   static const white = Color(0xFFFFFFFF);
 
   static const grey = Color(0xFF4D4D4D);
+
+  static const kDarkGreen = Color(0xFF040F0B);
+
+  static const startGradientColor = Color(0xFF18593F);
+  static const endGradientColor = Color(0xFF42CF4C);
 }

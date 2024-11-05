@@ -10,9 +10,6 @@
 class FontFamily {
   FontFamily._();
 
-  /// Font family: Alatsi
-  static const String alatsi = 'Alatsi';
-
-  /// Font family: Amarante
-  static const String amarante = 'Amarante';
+  /// Font family: Poppins
+  static const String poppins = 'Poppins';
 }

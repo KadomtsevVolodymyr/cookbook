@@ -59,6 +59,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Welcome to Cookbook`
+  String get welcomeToCookbook {
+    return Intl.message(
+      'Welcome to Cookbook',
+      name: 'welcomeToCookbook',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Discover nutritious, delicious, and easy-to-make recipes tailored to your lifestyle. Whether you're looking to fuel up, tone up, or simply eat healthier, Cookbook is here to guide you every step of the way.!`
+  String get welcome_description {
+    return Intl.message(
+      'Discover nutritious, delicious, and easy-to-make recipes tailored to your lifestyle. Whether you\'re looking to fuel up, tone up, or simply eat healthier, Cookbook is here to guide you every step of the way.!',
+      name: 'welcome_description',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up`
+  String get signUp {
+    return Intl.message(
+      'Sign Up',
+      name: 'signUp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Log in`
+  String get logIn {
+    return Intl.message(
+      'Log in',
+      name: 'logIn',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -20,14 +20,14 @@ class SolutionStorage implements ISolutionStorage {
   final HiveHelper _hiveHelper;
 
   @override
-  Future<int?> getTheme() async => await _hiveHelper.getValue<int?>(
+  Future<int?> getTheme() async => _hiveHelper.getValue<int?>(
         hive: _hive,
         boxName: _boxName,
         key: _themeValueKey,
       );
 
   @override
-  Future<String?> getLocale() async => await _hiveHelper.getValue<String?>(
+  Future<String?> getLocale() async => _hiveHelper.getValue<String?>(
         hive: _hive,
         boxName: _boxName,
         key: _localeValueKey,

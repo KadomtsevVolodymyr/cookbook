@@ -8,7 +8,8 @@ class EnvironmentService {
   }) : _appConfig = appConfig {
     if (!_appConfig.environmentsData.containsKey(environment)) {
       throw Exception(
-          'No config defined for provided environment - ${environment.name}');
+        'No config defined for provided environment - ${environment.name}',
+      );
     }
 
     _config = _appConfig.environmentsData[environment]!;

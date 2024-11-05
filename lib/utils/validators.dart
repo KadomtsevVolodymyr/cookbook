@@ -27,9 +27,9 @@ class Validators {
   static bool isInvalidPassword(String? value) {
     // Password should be at least 6 characters and should contain at least one letter and one number
     if (isEmpty(value)) return true;
-    final hasUpperCase = value!.contains(RegExp(r'[A-Z]'));
-    final hasLowerCase = value.contains(RegExp(r'[a-z]'));
-    final hasDigits = value.contains(RegExp(r'[0-9]'));
+    final hasUpperCase = value!.contains(RegExp('[A-Z]'));
+    final hasLowerCase = value.contains(RegExp('[a-z]'));
+    final hasDigits = value.contains(RegExp('[0-9]'));
     return value.length < 6 || !hasUpperCase || !hasLowerCase || !hasDigits;
   }
 

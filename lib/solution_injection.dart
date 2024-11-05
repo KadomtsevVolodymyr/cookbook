@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:cookbook/configs/app_config.dart';
 import 'package:cookbook/configs/environment/environment_helper.dart';
 import 'package:cookbook/configs/environment/environment_service.dart';
@@ -11,6 +10,7 @@ import 'package:cookbook/data/datasource/network/services/network_service/networ
 import 'package:cookbook/data/repositories/solution_repository.dart';
 import 'package:cookbook/domain/repositories/solution_repository_interface.dart';
 import 'package:cookbook/utils/hive_helper.dart';
+import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';

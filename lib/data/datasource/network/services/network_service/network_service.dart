@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'package:dio/dio.dart';
-import 'package:dio_smart_retry/dio_smart_retry.dart';
 import 'package:cookbook/data/datasource/network/exchange_models/action_errors.dart';
 import 'package:cookbook/data/datasource/network/exchange_models/request.dart';
 import 'package:cookbook/data/datasource/network/exchange_models/response.dart';
 import 'package:cookbook/data/datasource/network/services/network_service/network_service_interface.dart';
+import 'package:dio/dio.dart';
+import 'package:dio_smart_retry/dio_smart_retry.dart';
 
 class NetworkService implements INetworkService {
   NetworkService({

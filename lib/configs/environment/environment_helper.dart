@@ -25,7 +25,8 @@ class EnvironmentHelper {
     }
   }
 
-  ///Map string environment identifier given as environment variable to appropriate enum value
+  ///Map string environment identifier given as environment
+  ///variable to appropriate enum value
   EnvironmentType currentEnvironment() {
     final env = _environmentValue.toLowerCase();
     switch (env) {

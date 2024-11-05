@@ -14,12 +14,11 @@ class CustomBoxShadow extends StatelessWidget {
   Widget build(BuildContext context) {
     final shadow = boxShadow ??
         const BoxShadow(
-          color: Colors.black,
           offset: Offset(0, -1),
           blurRadius: 5,
         );
 
-    return Container(
+    return DecoratedBox(
       decoration: BoxDecoration(
         boxShadow: [shadow],
       ),

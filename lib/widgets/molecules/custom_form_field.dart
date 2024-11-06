@@ -1,6 +1,7 @@
 import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
 import 'package:cookbook/extensions/extensions.dart';
 import 'package:cookbook/generated/assets/assets.gen.dart';
+import 'package:cookbook/generated/l10n.dart';
 import 'package:cookbook/utils/validators.dart';
 import 'package:cookbook/widgets/molecules/error_form_text.dart';
 import 'package:flutter/material.dart';
@@ -91,14 +92,13 @@ class CustomFormFieldState extends State<CustomFormField> {
             String? error;
 
             if (widget.type == 'email' && Validators.isInvalidEmail(value)) {
-              error = 'Please enter a valid email address.';
+              error = S.of(context).pleaseEnterEmail;
             } else if (widget.type == 'password' &&
                 Validators.isInvalidPassword(value)) {
-              error =
-                  'Password must be at least 6 characters, include an uppercase letter, a lowercase letter, and a number.';
+              error = S.of(context).incorrectPassword;
             } else if (widget.type == 'username' &&
                 Validators.isInvalidName(value)) {
-              error = 'Name must be at least 3 characters long.';
+              error = S.of(context).usernameIncrorrect;
             } else if (Validators.isEmpty(value)) {
               error = 'Please enter your ${widget.label}.';
             }

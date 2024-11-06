@@ -22,9 +22,17 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "incorrectPassword": MessageLookupByLibrary.simpleMessage(
+            "Password must be at least 6 characters, include an uppercase letter, a lowercase letter, and a number."),
         "logIn": MessageLookupByLibrary.simpleMessage("Log in"),
+        "pleaseEnterEmail": MessageLookupByLibrary.simpleMessage(
+            "Please enter a valid email address."),
         "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
+        "termsAndConditions": MessageLookupByLibrary.simpleMessage(
+            "You must agree to the Terms and Conditions"),
         "username": MessageLookupByLibrary.simpleMessage("Username"),
+        "usernameIncrorrect": MessageLookupByLibrary.simpleMessage(
+            "Name must be at least 3 characters long."),
         "welcomeToCookbook":
             MessageLookupByLibrary.simpleMessage("Welcome to Cookbook"),
         "welcome_description": MessageLookupByLibrary.simpleMessage(

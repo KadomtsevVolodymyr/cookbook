@@ -4,5 +4,9 @@
   "welcomeToCookbook": "Welcome to Cookbook",
   "welcome_description": "Discover nutritious, delicious, and easy-to-make recipes tailored to your lifestyle. Whether you're looking to fuel up, tone up, or simply eat healthier, Cookbook is here to guide you every step of the way.!",
   "signUp": "Sign Up",
-  "logIn": "Log in"
+  "logIn": "Log in",
+  "pleaseEnterEmail": "Please enter a valid email address.",
+  "incorrectPassword": "Password must be at least 6 characters, include an uppercase letter, a lowercase letter, and a number.",
+  "usernameIncrorrect": "Name must be at least 3 characters long.",
+  "termsAndConditions": "You must agree to the Terms and Conditions"
 }

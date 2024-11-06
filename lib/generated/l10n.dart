@@ -99,6 +99,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Please enter a valid email address.`
+  String get pleaseEnterEmail {
+    return Intl.message(
+      'Please enter a valid email address.',
+      name: 'pleaseEnterEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must be at least 6 characters, include an uppercase letter, a lowercase letter, and a number.`
+  String get incorrectPassword {
+    return Intl.message(
+      'Password must be at least 6 characters, include an uppercase letter, a lowercase letter, and a number.',
+      name: 'incorrectPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name must be at least 3 characters long.`
+  String get usernameIncrorrect {
+    return Intl.message(
+      'Name must be at least 3 characters long.',
+      name: 'usernameIncrorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You must agree to the Terms and Conditions`
+  String get termsAndConditions {
+    return Intl.message(
+      'You must agree to the Terms and Conditions',
+      name: 'termsAndConditions',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

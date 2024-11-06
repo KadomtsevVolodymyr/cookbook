@@ -21,7 +21,7 @@ class _OnboardingLayoutState extends State<OnboardingLayout> {
   final spacing8 = SizedBox(height: 8.0.s);
   final spacing12 = SizedBox(height: 12.0.s);
   final spacing40 = SizedBox(height: 40.0.s);
-  // final spacing121 = SizedBox(height: 00);
+  final spacing110 = SizedBox(height: 110.0.s);
 
   final double logoWidth = 56.0.s;
   final double logoHeight = 67.0.s;
@@ -60,7 +60,7 @@ class _OnboardingLayoutState extends State<OnboardingLayout> {
                       textAlign: TextAlign.center,
                     ),
                   ),
-                  SizedBox(height: 110.0.s),
+                  spacing110,
                   CustomButton.primary(
                     text: Text(
                       S.of(context).signUp,

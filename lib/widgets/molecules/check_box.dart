@@ -1,6 +1,7 @@
 import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
 import 'package:cookbook/extensions/extensions.dart';
 import 'package:cookbook/generated/assets/assets.gen.dart';
+import 'package:cookbook/generated/l10n.dart';
 import 'package:cookbook/widgets/molecules/error_form_text.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -81,8 +82,8 @@ class CheckBoxWithTextState extends State<CheckBoxWithText> {
           ],
         ),
         if (widget.showErrorText)
-          const ErrorFormText(
-            errorMessage: 'You must agree to the Terms and Conditions',
+          ErrorFormText(
+            errorMessage: S.of(context).termsAndConditions,
           ),
         SizedBox(height: 24.0.s),
       ],

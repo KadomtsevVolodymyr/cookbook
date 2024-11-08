@@ -32,15 +32,18 @@ class _LogInLayoutState extends State<LogInLayout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: DefaultPalette.white,
+        automaticallyImplyLeading: false,
+        title: const AuthHeader(
+          greetingText: "Hey there,",
+          mainTitle: "Log in your Account",
+        ),
+      ),
       backgroundColor: DefaultPalette.white,
       body: ScreenSideOffset.large(
         child: Column(
           children: [
-            spacing50,
-            const AuthHeader(
-              greetingText: "Hey there,",
-              mainTitle: "Log in your Account",
-            ),
             RegisterForm(
               usernameController: usernameController,
               emailController: emailController,
@@ -59,6 +62,7 @@ class _LogInLayoutState extends State<LogInLayout> {
                     style: context.theme.textTheme.titleMedium?.copyWith(
                       color: DefaultPalette.borderColor,
                       decoration: TextDecoration.underline,
+                      decorationColor: DefaultPalette.borderColor,
                     ),
                   ),
                 ),
@@ -71,6 +75,7 @@ class _LogInLayoutState extends State<LogInLayout> {
                 style: context.theme.textTheme.headlineMedium,
               ),
               onPressed: () {
+                context.router.replaceAll([const UserProfileSetupRoute()]);
                 // TODO(Volodymyr): Handle Log in
               },
             ),

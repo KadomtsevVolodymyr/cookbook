@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
 import 'package:cookbook/extensions/extensions.dart';
+import 'package:cookbook/generated/assets/assets.gen.dart';
 import 'package:cookbook/navigation/app_router.dart';
 import 'package:cookbook/widgets/molecules/check_box.dart';
 import 'package:cookbook/widgets/molecules/custom_button.dart';
@@ -38,6 +39,14 @@ class _SignUpLayoutState extends State<SignUpLayout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: DefaultPalette.white,
+        automaticallyImplyLeading: false,
+        title: const AuthHeader(
+          greetingText: "Hey there,",
+          mainTitle: "Log in your Account",
+        ),
+      ),
       backgroundColor: DefaultPalette.white,
       body: SafeArea(
         child: LayoutBuilder(
@@ -52,10 +61,6 @@ class _SignUpLayoutState extends State<SignUpLayout> {
                     child: IntrinsicHeight(
                       child: Column(
                         children: [
-                          const AuthHeader(
-                            greetingText: "Hey there,",
-                            mainTitle: "Create an Account",
-                          ),
                           Form(
                             key: _formKey,
                             child: RegisterForm(
@@ -122,6 +127,7 @@ class _SignUpLayoutState extends State<SignUpLayout> {
   void _onRegisterPressed() {
     if (_formKey.currentState?.validate() ?? false) {
       if (_isChecked) {
+        // context.router.replaceAll([const UserProfileSetupRoute()]);
         // TODO(Volodymyr): Handle Registration
       } else {
         setState(() {

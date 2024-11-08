@@ -15,6 +15,12 @@ abstract class _$AppRouter extends RootStackRouter {
 
   @override
   final Map<String, PageFactory> pagesMap = {
+    ConnectHealthAppRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const ConnectHealthAppScreen(),
+      );
+    },
     LogInRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -33,7 +39,27 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const SignUpScreen(),
       );
     },
+    UserProfileSetupRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const UserProfileSetupScreen(),
+      );
+    },
   };
+}
+
+/// generated route for
+/// [ConnectHealthAppScreen]
+class ConnectHealthAppRoute extends PageRouteInfo<void> {
+  const ConnectHealthAppRoute({List<PageRouteInfo>? children})
+      : super(
+          ConnectHealthAppRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ConnectHealthAppRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
 }
 
 /// generated route for
@@ -74,6 +100,20 @@ class SignUpRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'SignUpRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [UserProfileSetupScreen]
+class UserProfileSetupRoute extends PageRouteInfo<void> {
+  const UserProfileSetupRoute({List<PageRouteInfo>? children})
+      : super(
+          UserProfileSetupRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'UserProfileSetupRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

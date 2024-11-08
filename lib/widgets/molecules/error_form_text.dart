@@ -19,7 +19,7 @@ class ErrorFormText extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Assets.svg.informationError.svg(),
+          Assets.icons.informationError.svg(),
           SizedBox(width: 8.0.s),
           Expanded(
             child: Text(

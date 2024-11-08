@@ -12,15 +12,132 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:vector_graphics/vector_graphics.dart';
 
+class $AssetsIconsGen {
+  const $AssetsIconsGen();
+
+  /// File path: assets/icons/Isaiah (1).zip
+  String get isaiah1 => 'assets/icons/Isaiah (1).zip';
+
+  /// File path: assets/icons/Isaiah.zip
+  String get isaiah => 'assets/icons/Isaiah.zip';
+
+  /// File path: assets/icons/add.svg
+  SvgGenImage get add => const SvgGenImage('assets/icons/add.svg');
+
+  /// File path: assets/icons/apple_logo.svg
+  SvgGenImage get appleLogo => const SvgGenImage('assets/icons/apple_logo.svg');
+
+  /// File path: assets/icons/arrow-left.svg
+  SvgGenImage get arrowLeft => const SvgGenImage('assets/icons/arrow-left.svg');
+
+  /// File path: assets/icons/arrow-white.svg
+  SvgGenImage get arrowWhite =>
+      const SvgGenImage('assets/icons/arrow-white.svg');
+
+  /// File path: assets/icons/arrow_bottom.svg
+  SvgGenImage get arrowBottom =>
+      const SvgGenImage('assets/icons/arrow_bottom.svg');
+
+  /// File path: assets/icons/arrow_top.svg
+  SvgGenImage get arrowTop => const SvgGenImage('assets/icons/arrow_top.svg');
+
+  /// File path: assets/icons/check-box-state2.svg
+  SvgGenImage get checkBoxState2 =>
+      const SvgGenImage('assets/icons/check-box-state2.svg');
+
+  /// File path: assets/icons/check-box-trnperent.svg
+  SvgGenImage get checkBoxTrnperent =>
+      const SvgGenImage('assets/icons/check-box-trnperent.svg');
+
+  /// File path: assets/icons/check_box_false.svg
+  SvgGenImage get checkBoxFalse =>
+      const SvgGenImage('assets/icons/check_box_false.svg');
+
+  /// File path: assets/icons/check_box_true.svg
+  SvgGenImage get checkBoxTrue =>
+      const SvgGenImage('assets/icons/check_box_true.svg');
+
+  /// File path: assets/icons/facebook_logo.svg
+  SvgGenImage get facebookLogo =>
+      const SvgGenImage('assets/icons/facebook_logo.svg');
+
+  /// File path: assets/icons/google_logo.png
+  AssetGenImage get googleLogo =>
+      const AssetGenImage('assets/icons/google_logo.png');
+
+  /// File path: assets/icons/hide_password.svg
+  SvgGenImage get hidePassword =>
+      const SvgGenImage('assets/icons/hide_password.svg');
+
+  /// File path: assets/icons/information_error.svg
+  SvgGenImage get informationError =>
+      const SvgGenImage('assets/icons/information_error.svg');
+
+  /// File path: assets/icons/qustion_icon.svg
+  SvgGenImage get qustionIcon =>
+      const SvgGenImage('assets/icons/qustion_icon.svg');
+
+  /// File path: assets/icons/radio-check.svg
+  SvgGenImage get radioCheck =>
+      const SvgGenImage('assets/icons/radio-check.svg');
+
+  /// File path: assets/icons/radio_check_true.svg
+  SvgGenImage get radioCheckTrue =>
+      const SvgGenImage('assets/icons/radio_check_true.svg');
+
+  /// File path: assets/icons/show_password.svg
+  SvgGenImage get showPassword =>
+      const SvgGenImage('assets/icons/show_password.svg');
+
+  /// List of all assets
+  List<dynamic> get values => [
+        isaiah1,
+        isaiah,
+        add,
+        appleLogo,
+        arrowLeft,
+        arrowWhite,
+        arrowBottom,
+        arrowTop,
+        checkBoxState2,
+        checkBoxTrnperent,
+        checkBoxFalse,
+        checkBoxTrue,
+        facebookLogo,
+        googleLogo,
+        hidePassword,
+        informationError,
+        qustionIcon,
+        radioCheck,
+        radioCheckTrue,
+        showPassword
+      ];
+}
+
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/active.png
+  AssetGenImage get active => const AssetGenImage('assets/images/active.png');
+
+  /// File path: assets/images/connect_health.svg
+  SvgGenImage get connectHealth =>
+      const SvgGenImage('assets/images/connect_health.svg');
+
+  /// File path: assets/images/dietary.png
+  AssetGenImage get dietary => const AssetGenImage('assets/images/dietary.png');
+
+  /// File path: assets/images/health_goal.png
+  AssetGenImage get healthGoal =>
+      const AssetGenImage('assets/images/health_goal.png');
 
   /// File path: assets/images/onboarding_top.svg
   SvgGenImage get onboardingTop =>
       const SvgGenImage('assets/images/onboarding_top.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [onboardingTop];
+  List<dynamic> get values =>
+      [active, connectHealth, dietary, healthGoal, onboardingTop];
 }
 
 class $AssetsLogoGen {
@@ -33,63 +150,16 @@ class $AssetsLogoGen {
   List<AssetGenImage> get values => [logo];
 }
 
-class $AssetsSvgGen {
-  const $AssetsSvgGen();
-
-  /// File path: assets/svg/apple_logo.svg
-  SvgGenImage get appleLogo => const SvgGenImage('assets/svg/apple_logo.svg');
-
-  /// File path: assets/svg/arrow-left.svg
-  SvgGenImage get arrowLeft => const SvgGenImage('assets/svg/arrow-left.svg');
-
-  /// File path: assets/svg/check_box_false.svg
-  SvgGenImage get checkBoxFalse =>
-      const SvgGenImage('assets/svg/check_box_false.svg');
-
-  /// File path: assets/svg/check_box_true.svg
-  SvgGenImage get checkBoxTrue =>
-      const SvgGenImage('assets/svg/check_box_true.svg');
-
-  /// File path: assets/svg/facebook_logo.svg
-  SvgGenImage get facebookLogo =>
-      const SvgGenImage('assets/svg/facebook_logo.svg');
-
-  /// File path: assets/svg/google_logo.png
-  AssetGenImage get googleLogo =>
-      const AssetGenImage('assets/svg/google_logo.png');
-
-  /// File path: assets/svg/hide_password.svg
-  SvgGenImage get hidePassword =>
-      const SvgGenImage('assets/svg/hide_password.svg');
-
-  /// File path: assets/svg/information_error.svg
-  SvgGenImage get informationError =>
-      const SvgGenImage('assets/svg/information_error.svg');
-
-  /// File path: assets/svg/show_password.svg
-  SvgGenImage get showPassword =>
-      const SvgGenImage('assets/svg/show_password.svg');
-
-  /// List of all assets
-  List<dynamic> get values => [
-        appleLogo,
-        arrowLeft,
-        checkBoxFalse,
-        checkBoxTrue,
-        facebookLogo,
-        googleLogo,
-        hidePassword,
-        informationError,
-        showPassword
-      ];
-}
-
 class Assets {
   Assets._();
 
+  static const String countries = 'assets/countries.json';
+  static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
   static const $AssetsLogoGen logo = $AssetsLogoGen();
-  static const $AssetsSvgGen svg = $AssetsSvgGen();
+
+  /// List of all assets
+  static List<String> get values => [countries];
 }
 
 class AssetGenImage {

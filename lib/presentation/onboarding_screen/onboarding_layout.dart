@@ -29,60 +29,54 @@ class _OnboardingLayoutState extends State<OnboardingLayout> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: GradientBackground(
-        colors: const [
-          DefaultPalette.startGradientColor,
-          DefaultPalette.endGradientColor,
-        ],
-        child: Stack(
-          children: [
-            Assets.images.onboardingTop.svg(
-              width: MediaQuery.of(context).size.width,
-            ),
-            ScreenSideOffset.large(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Assets.logo.logo.image(width: logoWidth, height: logoHeight),
-                  spacing24,
-                  Text(
-                    S.of(context).welcomeToCookbook,
-                    style: context.theme.textTheme.displayLarge,
+    return GradientBackground(
+      child: Stack(
+        children: [
+          Assets.images.onboardingTop.svg(
+            width: MediaQuery.of(context).size.width,
+          ),
+          ScreenSideOffset.large(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Assets.logo.logo.image(width: logoWidth, height: logoHeight),
+                spacing24,
+                Text(
+                  S.of(context).welcomeToCookbook,
+                  style: context.theme.textTheme.displayLarge,
+                  textAlign: TextAlign.center,
+                ),
+                spacing8,
+                SizedBox(
+                  width: descriptionWidth,
+                  child: Text(
+                    S.of(context).welcome_description,
+                    style: context.theme.textTheme.titleLarge,
                     textAlign: TextAlign.center,
                   ),
-                  spacing8,
-                  SizedBox(
-                    width: descriptionWidth,
-                    child: Text(
-                      S.of(context).welcome_description,
-                      style: context.theme.textTheme.titleLarge,
-                      textAlign: TextAlign.center,
-                    ),
+                ),
+                spacing110,
+                CustomButton.primary(
+                  text: Text(
+                    S.of(context).signUp,
+                    style: context.theme.textTheme.headlineMedium
+                        ?.copyWith(color: DefaultPalette.kDarkGreen),
                   ),
-                  spacing110,
-                  CustomButton.primary(
-                    text: Text(
-                      S.of(context).signUp,
-                      style: context.theme.textTheme.headlineMedium
-                          ?.copyWith(color: DefaultPalette.kDarkGreen),
-                    ),
-                    onPressed: () => context.router.push(const SignUpRoute()),
+                  onPressed: () => context.router.push(const SignUpRoute()),
+                ),
+                spacing12,
+                CustomButton.outline(
+                  text: Text(
+                    S.of(context).logIn,
+                    style: context.theme.textTheme.headlineMedium,
                   ),
-                  spacing12,
-                  CustomButton.outline(
-                    text: Text(
-                      S.of(context).logIn,
-                      style: context.theme.textTheme.headlineMedium,
-                    ),
-                    onPressed: () => context.router.push(const LogInRoute()),
-                  ),
-                  spacing40,
-                ],
-              ),
+                  onPressed: () => context.router.push(const LogInRoute()),
+                ),
+                spacing40,
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

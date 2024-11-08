@@ -21,7 +21,7 @@ class VendorThemeOneLight extends VendorOneCoreTheme {
   @override
   ThemeData get themeData {
     return ThemeData(
-      useMaterial3: false,
+      useMaterial3: true,
       colorScheme: const ColorScheme.light(
         primary: DefaultPalette.white,
         onSurface: Color(0xFF333333),

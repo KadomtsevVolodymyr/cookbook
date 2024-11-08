@@ -21,7 +21,7 @@ class AuthHeader extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         GestureDetector(
-          child: Assets.svg.arrowLeft.svg(width: 24.0.s, height: 24.0.s),
+          child: Assets.icons.arrowLeft.svg(width: 24.0.s, height: 24.0.s),
           onTap: () => context.router.maybePop(),
         ),
         Column(

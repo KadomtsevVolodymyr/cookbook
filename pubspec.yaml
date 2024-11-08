@@ -48,6 +48,9 @@ dependencies:
   # Utilities
   email_validator: ^3.0.0
   simple_gradient_text: ^1.3.0
+  image_picker: ^1.1.2
+  dropdown_search: ^6.0.1
+  dropdown_textfield: ^1.2.0
 
 dev_dependencies:
   flutter_test:
@@ -68,9 +71,10 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/svg/
+    - assets/icons/
     - assets/images/
     - assets/logo/
+    - assets/countries.json
 
   fonts:
     - family: Poppins

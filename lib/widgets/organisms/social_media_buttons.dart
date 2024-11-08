@@ -21,17 +21,17 @@ class SocialMediaButtons extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ImageButton(
-          image: Assets.svg.googleLogo.image(width: 20.0.s, height: 20.0.s),
+          image: Assets.icons.googleLogo.image(width: 20.0.s, height: 20.0.s),
           onPressed: onGooglePressed,
         ),
         SizedBox(width: 24.0.s),
         ImageButton(
-          image: Assets.svg.facebookLogo.svg(width: 20.0.s, height: 20.0.s),
+          image: Assets.icons.facebookLogo.svg(width: 20.0.s, height: 20.0.s),
           onPressed: onFacebookPressed,
         ),
         SizedBox(width: 24.0.s),
         ImageButton(
-          image: Assets.svg.appleLogo.svg(width: 20.0.s, height: 20.0.s),
+          image: Assets.icons.appleLogo.svg(width: 20.0.s, height: 20.0.s),
           onPressed: onApplePressed,
         ),
       ],

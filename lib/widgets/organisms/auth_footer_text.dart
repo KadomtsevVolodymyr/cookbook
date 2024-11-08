@@ -36,6 +36,7 @@ class AuthFooterText extends StatelessWidget {
             text: actionText,
             style: context.theme.textTheme.titleMedium!.copyWith(
               decoration: isUnderlined ? TextDecoration.underline : null,
+              height: 1.5,
             ),
           ),
         ),

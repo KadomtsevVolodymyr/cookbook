@@ -35,7 +35,7 @@ class AppEntry extends StatelessWidget {
     return MultiProvider(
       providers: SolutionInjection.getDiList(context),
       child: ScreenUtilInit(
-        designSize: const Size(395, 812),
+        designSize: const Size(375, 812),
         child: Builder(
           builder: (BuildContext context) {
             return ValueProvider<ThemeMode, ThemeMode>(

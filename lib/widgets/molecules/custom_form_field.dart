@@ -78,8 +78,8 @@ class CustomFormFieldState extends State<CustomFormField> {
             suffixIcon: widget.type == 'password'
                 ? IconButton(
                     icon: _obscureText
-                        ? Assets.svg.hidePassword.svg()
-                        : Assets.svg.showPassword.svg(),
+                        ? Assets.icons.hidePassword.svg()
+                        : Assets.icons.showPassword.svg(),
                     onPressed: () {
                       setState(() {
                         _obscureText = !_obscureText;

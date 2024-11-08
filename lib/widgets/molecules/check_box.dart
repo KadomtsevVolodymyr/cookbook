@@ -36,8 +36,8 @@ class CheckBoxWithTextState extends State<CheckBoxWithText> {
                 width: 16.0.s,
                 height: 16.0.s,
                 child: !widget.isChecked
-                    ? Assets.svg.checkBoxFalse.svg()
-                    : Assets.svg.checkBoxTrue.svg(),
+                    ? Assets.icons.checkBoxFalse.svg()
+                    : Assets.icons.checkBoxTrue.svg(),
               ),
             ),
             SizedBox(width: 8.0.s),
@@ -53,6 +53,7 @@ class CheckBoxWithTextState extends State<CheckBoxWithText> {
                       style: context.theme.textTheme.labelSmall?.copyWith(
                         color: DefaultPalette.inactiveTextColor,
                         decoration: TextDecoration.underline,
+                        decorationColor: DefaultPalette.borderColor,
                       ),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () {
@@ -69,6 +70,7 @@ class CheckBoxWithTextState extends State<CheckBoxWithText> {
                       style: context.theme.textTheme.labelSmall?.copyWith(
                         color: DefaultPalette.inactiveTextColor,
                         decoration: TextDecoration.underline,
+                        decorationColor: DefaultPalette.borderColor,
                       ),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () {

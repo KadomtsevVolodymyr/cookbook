@@ -1,13 +1,16 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
 import 'package:cookbook/extensions/extensions.dart';
 import 'package:cookbook/generated/assets/assets.gen.dart';
+import 'package:cookbook/navigation/app_router.dart';
+import 'package:cookbook/utils/health_permission_utils.dart';
 import 'package:flutter/material.dart';
 
 class HealthButton extends StatelessWidget {
   final String text;
   final Widget icon;
 
-  HealthButton._({
+  const HealthButton._({
     required this.text,
     required this.icon,
     Key? key,
@@ -44,7 +47,15 @@ class HealthButton extends StatelessWidget {
         shadowColor: Colors.transparent,
         elevation: 0,
       ),
-      onPressed: () {},
+      onPressed: () async {
+        final bool hasPermission =
+            await HealthPermissionUtil.requestDefaultPermission();
+        if (hasPermission) {
+          await context.router.replaceAll([const LogInSuccessRoute()]);
+        } else {
+          await context.router.replaceAll([const LogInSuccessRoute()]);
+        }
+      },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

@@ -1,10 +1,11 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
 import 'package:cookbook/extensions/extensions.dart';
 import 'package:cookbook/generated/assets/assets.gen.dart';
+import 'package:cookbook/navigation/app_router.dart';
 import 'package:cookbook/utils/platform_utils.dart';
 import 'package:cookbook/widgets/molecules/gradient_background.dart';
 import 'package:cookbook/widgets/molecules/health_button.dart';
-import 'package:cookbook/widgets/molecules/scrollable_decorated_container.dart';
 import 'package:cookbook/widgets/organisms/screen_side_offset.dart';
 import 'package:flutter/material.dart';
 
@@ -91,7 +92,9 @@ class _ConnectHealthAppLayoutState extends State<ConnectHealthAppLayout> {
 
   GestureDetector _skipText(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        context.router.replaceAll([const LogInSuccessRoute()]);
+      },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

@@ -27,6 +27,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const LogInScreen(),
       );
     },
+    LogInSuccessRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const LogInSuccessScreen(),
+      );
+    },
     OnboardingRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -72,6 +78,20 @@ class LogInRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'LogInRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [LogInSuccessScreen]
+class LogInSuccessRoute extends PageRouteInfo<void> {
+  const LogInSuccessRoute({List<PageRouteInfo>? children})
+      : super(
+          LogInSuccessRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'LogInSuccessRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

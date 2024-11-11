@@ -15,12 +15,6 @@ import 'package:vector_graphics/vector_graphics.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
-  /// File path: assets/icons/Isaiah (1).zip
-  String get isaiah1 => 'assets/icons/Isaiah (1).zip';
-
-  /// File path: assets/icons/Isaiah.zip
-  String get isaiah => 'assets/icons/Isaiah.zip';
-
   /// File path: assets/icons/add.svg
   SvgGenImage get add => const SvgGenImage('assets/icons/add.svg');
 
@@ -91,8 +85,6 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<dynamic> get values => [
-        isaiah1,
-        isaiah,
         add,
         appleLogo,
         arrowLeft,
@@ -120,6 +112,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/active.png
   AssetGenImage get active => const AssetGenImage('assets/images/active.png');
 
+  /// File path: assets/images/congrt_top.svg
+  SvgGenImage get congrtTop =>
+      const SvgGenImage('assets/images/congrt_top.svg');
+
   /// File path: assets/images/connect_health.svg
   SvgGenImage get connectHealth =>
       const SvgGenImage('assets/images/connect_health.svg');
@@ -137,7 +133,7 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<dynamic> get values =>
-      [active, connectHealth, dietary, healthGoal, onboardingTop];
+      [active, congrtTop, connectHealth, dietary, healthGoal, onboardingTop];
 }
 
 class $AssetsLogoGen {

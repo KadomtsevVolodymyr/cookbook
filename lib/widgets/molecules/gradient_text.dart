@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 class GradientText extends StatelessWidget {
   final String text;
   final TextStyle style;
+  final List<Color> colors;
 
   const GradientText({
     required this.text,
     required this.style,
+    required this.colors,
     super.key,
   });
 
@@ -16,14 +18,9 @@ class GradientText extends StatelessWidget {
     return ShaderMask(
       blendMode: BlendMode.srcIn,
       shaderCallback: (Rect bounds) {
-        return const LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            DefaultPalette.endGradientColor,
-            DefaultPalette.startGradientColor,
-          ],
-        ).createShader(const Rect.fromLTWH(0.0, 0.0, 10.0, 10.0));
+        return LinearGradient(
+          colors: colors,
+        ).createShader(const Rect.fromLTWH(10.0, 0.0, 10.0, 10.0));
       },
       child: Text(
         text,

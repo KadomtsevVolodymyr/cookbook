@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:cookbook/presentation/account_screen/account_screen.dart';
 import 'package:cookbook/presentation/connect_health_app/connect_health_app_screen.dart';
 import 'package:cookbook/presentation/home_screen/home_screen.dart';
 import 'package:cookbook/presentation/log_in_screen/log_in_screen.dart';
@@ -39,11 +40,18 @@ class AppRouter extends _$AppRouter {
           page: LogInSuccessRoute.page,
           path: LogInSuccessScreen.path,
         ),
-        AutoRoute(page: HomeRoute.page, path: HomeScreen.path, children: [
-          AutoRoute(
-            page: MainRoute.page,
-            path: MainScreen.path,
-          ),
-        ]),
+        AutoRoute(
+          page: HomeRoute.page,
+          path: HomeScreen.path,
+          children: [
+            AutoRoute(
+              page: MainRoute.page,
+              path: MainScreen.path,
+              children: [
+                AutoRoute(page: AccountRoute.page, path: AccountScreen.path),
+              ],
+            ),
+          ],
+        ),
       ];
 }

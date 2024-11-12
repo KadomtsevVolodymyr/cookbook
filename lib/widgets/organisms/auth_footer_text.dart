@@ -33,6 +33,10 @@ class AuthFooterText extends StatelessWidget {
         GestureDetector(
           onTap: onTap,
           child: GradientText(
+            colors: [
+              DefaultPalette.endGradientColor,
+              DefaultPalette.startGradientColor,
+            ],
             text: actionText,
             style: context.theme.textTheme.titleMedium!.copyWith(
               decoration: isUnderlined ? TextDecoration.underline : null,

@@ -101,8 +101,7 @@ class VendorThemeOneLight extends VendorOneCoreTheme {
         labelMedium: const TextStyle(
           color: DefaultPalette.black,
           fontWeight: FontWeight.w500,
-          fontSize: 15,
-          height: 18 / 15,
+          fontSize: 16,
         ),
         labelSmall: TextStyle(
           color: DefaultPalette.black,

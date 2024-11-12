@@ -18,6 +18,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/add.svg
   SvgGenImage get add => const SvgGenImage('assets/icons/add.svg');
 
+  /// File path: assets/icons/analytics.svg
+  SvgGenImage get analytics => const SvgGenImage('assets/icons/analytics.svg');
+
   /// File path: assets/icons/apple_logo.svg
   SvgGenImage get appleLogo => const SvgGenImage('assets/icons/apple_logo.svg');
 
@@ -35,6 +38,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/arrow_right.svg
   SvgGenImage get arrowRight =>
       const SvgGenImage('assets/icons/arrow_right.svg');
+
+  /// File path: assets/icons/arrow_right_type2.svg
+  SvgGenImage get arrowRightType2 =>
+      const SvgGenImage('assets/icons/arrow_right_type2.svg');
 
   /// File path: assets/icons/arrow_top.svg
   SvgGenImage get arrowTop => const SvgGenImage('assets/icons/arrow_top.svg');
@@ -75,6 +82,9 @@ class $AssetsIconsGen {
   SvgGenImage get forumNavUnnactive =>
       const SvgGenImage('assets/icons/forum_nav_unnactive.svg');
 
+  /// File path: assets/icons/goals.svg
+  SvgGenImage get goals => const SvgGenImage('assets/icons/goals.svg');
+
   /// File path: assets/icons/google_logo.png
   AssetGenImage get googleLogo =>
       const AssetGenImage('assets/icons/google_logo.png');
@@ -94,6 +104,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/information_error.svg
   SvgGenImage get informationError =>
       const SvgGenImage('assets/icons/information_error.svg');
+
+  /// File path: assets/icons/notification.svg
+  SvgGenImage get notification =>
+      const SvgGenImage('assets/icons/notification.svg');
+
+  /// File path: assets/icons/personal_data.svg
+  SvgGenImage get personalData =>
+      const SvgGenImage('assets/icons/personal_data.svg');
 
   /// File path: assets/icons/profile.svg
   SvgGenImage get profile => const SvgGenImage('assets/icons/profile.svg');
@@ -126,9 +144,22 @@ class $AssetsIconsGen {
   SvgGenImage get scannerNavUnnactive =>
       const SvgGenImage('assets/icons/scanner_nav_unnactive.svg');
 
+  /// File path: assets/icons/setting.svg
+  SvgGenImage get setting => const SvgGenImage('assets/icons/setting.svg');
+
   /// File path: assets/icons/show_password.svg
   SvgGenImage get showPassword =>
       const SvgGenImage('assets/icons/show_password.svg');
+
+  /// File path: assets/icons/statistic_button.svg
+  SvgGenImage get statisticButton =>
+      const SvgGenImage('assets/icons/statistic_button.svg');
+
+  /// File path: assets/icons/sub_plan.svg
+  SvgGenImage get subPlan => const SvgGenImage('assets/icons/sub_plan.svg');
+
+  /// File path: assets/icons/support.svg
+  SvgGenImage get support => const SvgGenImage('assets/icons/support.svg');
 
   /// File path: assets/icons/tips_nav_active.svg
   SvgGenImage get tipsNavActive =>
@@ -141,11 +172,13 @@ class $AssetsIconsGen {
   /// List of all assets
   List<dynamic> get values => [
         add,
+        analytics,
         appleLogo,
         arrowLeft,
         arrowWhite,
         arrowBottom,
         arrowRight,
+        arrowRightType2,
         arrowTop,
         checkBoxState2,
         checkBoxTrnperent,
@@ -156,11 +189,14 @@ class $AssetsIconsGen {
         facebookLogo,
         forumNavActive,
         forumNavUnnactive,
+        goals,
         googleLogo,
         hidePassword,
         homeNavActive,
         homeNavUnnactive,
         informationError,
+        notification,
+        personalData,
         profile,
         qustionIcon,
         radioCheck,
@@ -169,7 +205,11 @@ class $AssetsIconsGen {
         recipiesNavUnnactive,
         scannerNavActive,
         scannerNavUnnactive,
+        setting,
         showPassword,
+        statisticButton,
+        subPlan,
+        support,
         tipsNavActive,
         tipsNavUnnactive
       ];
@@ -180,6 +220,9 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/active.png
   AssetGenImage get active => const AssetGenImage('assets/images/active.png');
+
+  /// File path: assets/images/avatar.png
+  AssetGenImage get avatar => const AssetGenImage('assets/images/avatar.png');
 
   /// File path: assets/images/congrt_top.svg
   SvgGenImage get congrtTop =>
@@ -207,6 +250,7 @@ class $AssetsImagesGen {
   /// List of all assets
   List<dynamic> get values => [
         active,
+        avatar,
         congrtTop,
         connectHealth,
         dietary,

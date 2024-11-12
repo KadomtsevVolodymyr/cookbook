@@ -32,6 +32,10 @@ class $AssetsIconsGen {
   SvgGenImage get arrowBottom =>
       const SvgGenImage('assets/icons/arrow_bottom.svg');
 
+  /// File path: assets/icons/arrow_right.svg
+  SvgGenImage get arrowRight =>
+      const SvgGenImage('assets/icons/arrow_right.svg');
+
   /// File path: assets/icons/arrow_top.svg
   SvgGenImage get arrowTop => const SvgGenImage('assets/icons/arrow_top.svg');
 
@@ -43,6 +47,10 @@ class $AssetsIconsGen {
   SvgGenImage get checkBoxTrnperent =>
       const SvgGenImage('assets/icons/check-box-trnperent.svg');
 
+  /// File path: assets/icons/check_active.svg
+  SvgGenImage get checkActive =>
+      const SvgGenImage('assets/icons/check_active.svg');
+
   /// File path: assets/icons/check_box_false.svg
   SvgGenImage get checkBoxFalse =>
       const SvgGenImage('assets/icons/check_box_false.svg');
@@ -51,9 +59,21 @@ class $AssetsIconsGen {
   SvgGenImage get checkBoxTrue =>
       const SvgGenImage('assets/icons/check_box_true.svg');
 
+  /// File path: assets/icons/check_unnactive.svg
+  SvgGenImage get checkUnnactive =>
+      const SvgGenImage('assets/icons/check_unnactive.svg');
+
   /// File path: assets/icons/facebook_logo.svg
   SvgGenImage get facebookLogo =>
       const SvgGenImage('assets/icons/facebook_logo.svg');
+
+  /// File path: assets/icons/forum_nav_active.svg
+  SvgGenImage get forumNavActive =>
+      const SvgGenImage('assets/icons/forum_nav_active.svg');
+
+  /// File path: assets/icons/forum_nav_unnactive.svg
+  SvgGenImage get forumNavUnnactive =>
+      const SvgGenImage('assets/icons/forum_nav_unnactive.svg');
 
   /// File path: assets/icons/google_logo.png
   AssetGenImage get googleLogo =>
@@ -63,9 +83,20 @@ class $AssetsIconsGen {
   SvgGenImage get hidePassword =>
       const SvgGenImage('assets/icons/hide_password.svg');
 
+  /// File path: assets/icons/home_nav_active.svg
+  SvgGenImage get homeNavActive =>
+      const SvgGenImage('assets/icons/home_nav_active.svg');
+
+  /// File path: assets/icons/home_nav_unnactive.svg
+  SvgGenImage get homeNavUnnactive =>
+      const SvgGenImage('assets/icons/home_nav_unnactive.svg');
+
   /// File path: assets/icons/information_error.svg
   SvgGenImage get informationError =>
       const SvgGenImage('assets/icons/information_error.svg');
+
+  /// File path: assets/icons/profile.svg
+  SvgGenImage get profile => const SvgGenImage('assets/icons/profile.svg');
 
   /// File path: assets/icons/qustion_icon.svg
   SvgGenImage get qustionIcon =>
@@ -79,9 +110,33 @@ class $AssetsIconsGen {
   SvgGenImage get radioCheckTrue =>
       const SvgGenImage('assets/icons/radio_check_true.svg');
 
+  /// File path: assets/icons/recipies_nav_active.svg
+  SvgGenImage get recipiesNavActive =>
+      const SvgGenImage('assets/icons/recipies_nav_active.svg');
+
+  /// File path: assets/icons/recipies_nav_unnactive.svg
+  SvgGenImage get recipiesNavUnnactive =>
+      const SvgGenImage('assets/icons/recipies_nav_unnactive.svg');
+
+  /// File path: assets/icons/scanner_nav_active.svg
+  SvgGenImage get scannerNavActive =>
+      const SvgGenImage('assets/icons/scanner_nav_active.svg');
+
+  /// File path: assets/icons/scanner_nav_unnactive.svg
+  SvgGenImage get scannerNavUnnactive =>
+      const SvgGenImage('assets/icons/scanner_nav_unnactive.svg');
+
   /// File path: assets/icons/show_password.svg
   SvgGenImage get showPassword =>
       const SvgGenImage('assets/icons/show_password.svg');
+
+  /// File path: assets/icons/tips_nav_active.svg
+  SvgGenImage get tipsNavActive =>
+      const SvgGenImage('assets/icons/tips_nav_active.svg');
+
+  /// File path: assets/icons/tips_nav_unnactive.svg
+  SvgGenImage get tipsNavUnnactive =>
+      const SvgGenImage('assets/icons/tips_nav_unnactive.svg');
 
   /// List of all assets
   List<dynamic> get values => [
@@ -90,19 +145,33 @@ class $AssetsIconsGen {
         arrowLeft,
         arrowWhite,
         arrowBottom,
+        arrowRight,
         arrowTop,
         checkBoxState2,
         checkBoxTrnperent,
+        checkActive,
         checkBoxFalse,
         checkBoxTrue,
+        checkUnnactive,
         facebookLogo,
+        forumNavActive,
+        forumNavUnnactive,
         googleLogo,
         hidePassword,
+        homeNavActive,
+        homeNavUnnactive,
         informationError,
+        profile,
         qustionIcon,
         radioCheck,
         radioCheckTrue,
-        showPassword
+        recipiesNavActive,
+        recipiesNavUnnactive,
+        scannerNavActive,
+        scannerNavUnnactive,
+        showPassword,
+        tipsNavActive,
+        tipsNavUnnactive
       ];
 }
 
@@ -127,13 +196,24 @@ class $AssetsImagesGen {
   AssetGenImage get healthGoal =>
       const AssetGenImage('assets/images/health_goal.png');
 
+  /// File path: assets/images/meal_plan.png
+  AssetGenImage get mealPlan =>
+      const AssetGenImage('assets/images/meal_plan.png');
+
   /// File path: assets/images/onboarding_top.svg
   SvgGenImage get onboardingTop =>
       const SvgGenImage('assets/images/onboarding_top.svg');
 
   /// List of all assets
-  List<dynamic> get values =>
-      [active, congrtTop, connectHealth, dietary, healthGoal, onboardingTop];
+  List<dynamic> get values => [
+        active,
+        congrtTop,
+        connectHealth,
+        dietary,
+        healthGoal,
+        mealPlan,
+        onboardingTop
+      ];
 }
 
 class $AssetsLogoGen {

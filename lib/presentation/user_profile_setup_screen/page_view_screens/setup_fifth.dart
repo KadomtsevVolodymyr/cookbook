@@ -1,11 +1,10 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
 import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
 import 'package:cookbook/navigation/app_router.dart';
 import 'package:cookbook/widgets/molecules/country_picker.dart';
 import 'package:cookbook/widgets/molecules/custom_button.dart';
-import 'package:cookbook/widgets/molecules/custom_form_field.dart';
+import 'package:cookbook/widgets/molecules/gradient_container.dart';
 import 'package:cookbook/widgets/molecules/scrollable_decorated_container.dart';
 import 'package:cookbook/widgets/organisms/custom_checkbox_list.dart';
 import 'package:cookbook/widgets/organisms/screen_side_offset.dart';
@@ -85,60 +84,35 @@ class _SetUpFifthState extends State<SetUpFifth> {
                 ),
               ),
             ),
-            DecoratedBox(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(
-                  color: const Color(0xFFF7F8F8),
-                  width: 1.0,
-                ),
-                gradient: const LinearGradient(
-                  end: Alignment(-4, -0.2),
-                  begin: Alignment(3, -0.08),
-                  colors: [
-                    Color.fromRGBO(
-                      117,
-                      219,
-                      126,
-                      0.2,
-                    ),
-                    Color.fromRGBO(0, 205, 172, 0.2),
-                  ],
-                  stops: [0.0, 1.0],
-                ),
-              ),
-              child: Padding(
-                padding: paddingAll20,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: paddingBottom10,
-                      child: Text(
-                        'Push Notifications',
-                        style: context.theme.textTheme.headlineMedium?.copyWith(
-                          color: DefaultPalette.kDarkGreen,
-                        ),
+            GradientContainer(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: paddingBottom10,
+                    child: Text(
+                      'Push Notifications',
+                      style: context.theme.textTheme.headlineMedium?.copyWith(
+                        color: DefaultPalette.kDarkGreen,
                       ),
                     ),
-                    CustomCheckboxList(
-                      isTransparentCheckbox: true,
-                      selectedOptions: notificationsOptions,
-                      onChanged: (newOptions) {
-                        setState(() {
-                          notificationsOptions = newOptions;
-                        });
-                      },
-                      textController: textController,
+                  ),
+                  CustomCheckboxList(
+                    selectedOptions: notificationsOptions,
+                    onChanged: (newOptions) {
+                      setState(() {
+                        notificationsOptions = newOptions;
+                      });
+                    },
+                    textController: textController,
+                  ),
+                  Text(
+                    "Choose the types of notifications you want to receive. We’ll keep you updated with reminders, tips, and new content.",
+                    style: context.theme.textTheme.labelSmall?.copyWith(
+                      color: DefaultPalette.inactiveTextColor,
                     ),
-                    Text(
-                      "Choose the types of notifications you want to receive. We’ll keep you updated with reminders, tips, and new content.",
-                      style: context.theme.textTheme.labelSmall?.copyWith(
-                        color: DefaultPalette.inactiveTextColor,
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
             spacing24,

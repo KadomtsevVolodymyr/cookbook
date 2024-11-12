@@ -122,10 +122,9 @@ class VendorThemeOneLight extends VendorOneCoreTheme {
           height: 20 / 14,
         ),
         bodySmall: const TextStyle(
-          color: DefaultPalette.black,
-          fontWeight: FontWeight.w600,
-          fontSize: 14,
-          height: 17 / 14,
+          color: DefaultPalette.inactiveTextColor,
+          fontWeight: FontWeight.w400,
+          fontSize: 12,
         ),
       ).apply(fontFamily: FontFamily.poppins),
     );

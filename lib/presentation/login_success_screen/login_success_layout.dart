@@ -56,7 +56,7 @@ class _LoginSuccessLayoutState extends State<LoginSuccessLayout> {
                     "Go To Home",
                     style: context.theme.textTheme.headlineMedium,
                   ),
-                  onPressed: () => context.router.push(const SignUpRoute()),
+                  onPressed: () => context.router.push(const HomeRoute()),
                 ),
                 spacing40,
               ],

@@ -36,4 +36,6 @@ class DefaultPalette {
   static const borderColor = Color(0xFFDDDADA);
 
   static const errorColor = Color(0xFFE43C18);
+
+  static const activeNavColor = Color(0xFF51A966);
 }

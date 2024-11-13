@@ -57,6 +57,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const OnboardingScreen(),
       );
     },
+    ReportsAnalyticsRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const ReportsAnalyticsScreen(),
+      );
+    },
     SignUpRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -166,6 +172,20 @@ class OnboardingRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'OnboardingRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [ReportsAnalyticsScreen]
+class ReportsAnalyticsRoute extends PageRouteInfo<void> {
+  const ReportsAnalyticsRoute({List<PageRouteInfo>? children})
+      : super(
+          ReportsAnalyticsRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ReportsAnalyticsRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

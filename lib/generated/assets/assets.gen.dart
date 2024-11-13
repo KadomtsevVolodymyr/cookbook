@@ -35,6 +35,10 @@ class $AssetsIconsGen {
   SvgGenImage get arrowBottom =>
       const SvgGenImage('assets/icons/arrow_bottom.svg');
 
+  /// File path: assets/icons/arrow_bottom_type2.svg
+  SvgGenImage get arrowBottomType2 =>
+      const SvgGenImage('assets/icons/arrow_bottom_type2.svg');
+
   /// File path: assets/icons/arrow_right.svg
   SvgGenImage get arrowRight =>
       const SvgGenImage('assets/icons/arrow_right.svg');
@@ -100,6 +104,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/home_nav_unnactive.svg
   SvgGenImage get homeNavUnnactive =>
       const SvgGenImage('assets/icons/home_nav_unnactive.svg');
+
+  /// File path: assets/icons/hydration_balance.svg
+  SvgGenImage get hydrationBalance =>
+      const SvgGenImage('assets/icons/hydration_balance.svg');
 
   /// File path: assets/icons/information_error.svg
   SvgGenImage get informationError =>
@@ -177,6 +185,7 @@ class $AssetsIconsGen {
         arrowLeft,
         arrowWhite,
         arrowBottom,
+        arrowBottomType2,
         arrowRight,
         arrowRightType2,
         arrowTop,
@@ -194,6 +203,7 @@ class $AssetsIconsGen {
         hidePassword,
         homeNavActive,
         homeNavUnnactive,
+        hydrationBalance,
         informationError,
         notification,
         personalData,

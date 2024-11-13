@@ -6,6 +6,7 @@ import 'package:cookbook/presentation/log_in_screen/log_in_screen.dart';
 import 'package:cookbook/presentation/login_success_screen/login_success_screen.dart';
 import 'package:cookbook/presentation/main_screen/main_screen.dart';
 import 'package:cookbook/presentation/onboarding_screen/onboarding_screen.dart';
+import 'package:cookbook/presentation/reports_analytics_screen/reports_analytics_screen.dart';
 import 'package:cookbook/presentation/sign_up_screen/sign_up_screen.dart';
 import 'package:cookbook/presentation/user_profile_setup_screen/user_profile_setup_screen.dart';
 
@@ -48,7 +49,16 @@ class AppRouter extends _$AppRouter {
               page: MainRoute.page,
               path: MainScreen.path,
               children: [
-                AutoRoute(page: AccountRoute.page, path: AccountScreen.path),
+                AutoRoute(
+                  page: AccountRoute.page,
+                  path: AccountScreen.path,
+                  children: [
+                    AutoRoute(
+                      path: ReportsAnalyticsScreen.path,
+                      page: ReportsAnalyticsRoute.page,
+                    ),
+                  ],
+                ),
               ],
             ),
           ],

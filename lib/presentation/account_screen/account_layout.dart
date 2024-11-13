@@ -2,6 +2,7 @@ import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
 import 'package:cookbook/data/model/reusable_card_item.dart';
 import 'package:cookbook/extensions/extensions.dart';
 import 'package:cookbook/generated/assets/assets.gen.dart';
+import 'package:cookbook/presentation/reports_analytics_screen/reports_analytics_screen.dart';
 import 'package:cookbook/widgets/molecules/custom_button.dart';
 import 'package:cookbook/widgets/molecules/gradient_switch.dart';
 import 'package:cookbook/widgets/molecules/reusable_card.dart';
@@ -49,7 +50,10 @@ class _AccountLayoutState extends State<AccountLayout> {
         actions: [
           ScreenSideOffset.large(
             child: GestureDetector(
-              onTap: () {},
+              onTap: () => PersistentNavBarNavigator.pushNewScreen(
+                context,
+                screen: const ReportsAnalyticsScreen(),
+              ),
               child: Assets.icons.statisticButton.svg(),
             ),
           ),

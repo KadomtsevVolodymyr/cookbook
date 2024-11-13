@@ -47,8 +47,8 @@ class ReusableCard extends StatelessWidget {
                 onTap: item.onTap,
                 child: Row(
                   children: [
-                    item.icon,
-                    spacingW10,
+                    if (item.icon != null) item.icon!,
+                    if (item.icon != null) spacingW10,
                     Text(
                       item.text,
                       style: context.theme.textTheme.displayMedium

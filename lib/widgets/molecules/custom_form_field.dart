@@ -9,25 +9,36 @@ import 'package:flutter/material.dart';
 class CustomFormField extends StatefulWidget {
   final String label;
   final String? type;
+  final Widget? prefixIcon;
   final TextEditingController controller;
 
   const CustomFormField.username({
     required this.label,
     required this.controller,
     super.key,
-  }) : type = 'username';
+  })  : type = 'username',
+        prefixIcon = null;
 
   const CustomFormField.email({
     required this.label,
     required this.controller,
     super.key,
-  }) : type = 'email';
+  })  : type = 'email',
+        prefixIcon = null;
 
   const CustomFormField.password({
     required this.label,
     required this.controller,
     super.key,
-  }) : type = 'password';
+  })  : type = 'password',
+        prefixIcon = null;
+
+  const CustomFormField.custom({
+    required this.label,
+    required this.controller,
+    super.key,
+    this.prefixIcon,
+  }) : type = 'custom';
 
   @override
   CustomFormFieldState createState() => CustomFormFieldState();
@@ -75,6 +86,13 @@ class CustomFormFieldState extends State<CustomFormField> {
                     : DefaultPalette.errorColor,
               ),
             ),
+            prefixIconConstraints: BoxConstraints(maxHeight: 17.0.s),
+            prefixIcon: widget.type == 'custom'
+                ? Padding(
+                    padding: EdgeInsets.only(left: 16.0.s, right: 10.0.s),
+                    child: widget.prefixIcon,
+                  )
+                : null,
             suffixIcon: widget.type == 'password'
                 ? IconButton(
                     icon: _obscureText

@@ -103,7 +103,8 @@ class _ReportsAnalyticsLayoutState extends State<ReportsAnalyticsLayout>
                                 'Daily water intake recommendations vary, with adult women needing about 2.7 liters and men 3.7 liters, though factors like exercise, climate, and diet can increase these needs. Signs of proper hydration include clear urine, consistent energy levels, and healthy skin, while dehydration can cause fatigue, dizziness, and dark urine.',
                                 style: context.theme.textTheme.displayMedium
                                     ?.copyWith(
-                                        color: DefaultPalette.kDarkGreen),
+                                  color: DefaultPalette.kDarkGreen,
+                                ),
                               ),
                               spacing12,
                               Row(
@@ -131,7 +132,8 @@ class _ReportsAnalyticsLayoutState extends State<ReportsAnalyticsLayout>
                                         style: context
                                             .theme.textTheme.labelSmall
                                             ?.copyWith(
-                                                color: DefaultPalette.white),
+                                          color: DefaultPalette.white,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -142,8 +144,8 @@ class _ReportsAnalyticsLayoutState extends State<ReportsAnalyticsLayout>
                                 'Overhydration, though rare, can lead to hyponatremia, where sodium levels drop dangerously low, highlighting the need for balanced water and electrolyte intake.',
                                 style: context.theme.textTheme.displayMedium
                                     ?.copyWith(
-                                        color:
-                                            DefaultPalette.inactiveTextColor),
+                                  color: DefaultPalette.inactiveTextColor,
+                                ),
                               ),
                               spacing12,
                             ],

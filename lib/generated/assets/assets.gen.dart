@@ -74,9 +74,18 @@ class $AssetsIconsGen {
   SvgGenImage get checkUnnactive =>
       const SvgGenImage('assets/icons/check_unnactive.svg');
 
+  /// File path: assets/icons/close.svg
+  SvgGenImage get close => const SvgGenImage('assets/icons/close.svg');
+
   /// File path: assets/icons/facebook_logo.svg
   SvgGenImage get facebookLogo =>
       const SvgGenImage('assets/icons/facebook_logo.svg');
+
+  /// File path: assets/icons/fats.svg
+  SvgGenImage get fats => const SvgGenImage('assets/icons/fats.svg');
+
+  /// File path: assets/icons/filter.svg
+  SvgGenImage get filter => const SvgGenImage('assets/icons/filter.svg');
 
   /// File path: assets/icons/forum_nav_active.svg
   SvgGenImage get forumNavActive =>
@@ -93,9 +102,24 @@ class $AssetsIconsGen {
   AssetGenImage get googleLogo =>
       const AssetGenImage('assets/icons/google_logo.png');
 
+  /// File path: assets/icons/heart_empty.svg
+  SvgGenImage get heartEmpty =>
+      const SvgGenImage('assets/icons/heart_empty.svg');
+
+  /// File path: assets/icons/heart_full.svg
+  SvgGenImage get heartFull => const SvgGenImage('assets/icons/heart_full.svg');
+
   /// File path: assets/icons/hide_password.svg
   SvgGenImage get hidePassword =>
       const SvgGenImage('assets/icons/hide_password.svg');
+
+  /// File path: assets/icons/hight_fiber.svg
+  SvgGenImage get hightFiber =>
+      const SvgGenImage('assets/icons/hight_fiber.svg');
+
+  /// File path: assets/icons/hight_protein.svg
+  SvgGenImage get hightProtein =>
+      const SvgGenImage('assets/icons/hight_protein.svg');
 
   /// File path: assets/icons/home_nav_active.svg
   SvgGenImage get homeNavActive =>
@@ -112,6 +136,20 @@ class $AssetsIconsGen {
   /// File path: assets/icons/information_error.svg
   SvgGenImage get informationError =>
       const SvgGenImage('assets/icons/information_error.svg');
+
+  /// File path: assets/icons/like.svg
+  SvgGenImage get like => const SvgGenImage('assets/icons/like.svg');
+
+  /// File path: assets/icons/low_calories_icon.svg
+  SvgGenImage get lowCaloriesIcon =>
+      const SvgGenImage('assets/icons/low_calories_icon.svg');
+
+  /// File path: assets/icons/low_carb.svg
+  SvgGenImage get lowCarb => const SvgGenImage('assets/icons/low_carb.svg');
+
+  /// File path: assets/icons/nothing_found.svg
+  SvgGenImage get nothingFound =>
+      const SvgGenImage('assets/icons/nothing_found.svg');
 
   /// File path: assets/icons/notification.svg
   SvgGenImage get notification =>
@@ -152,6 +190,10 @@ class $AssetsIconsGen {
   SvgGenImage get scannerNavUnnactive =>
       const SvgGenImage('assets/icons/scanner_nav_unnactive.svg');
 
+  /// File path: assets/icons/search_icon.svg
+  SvgGenImage get searchIcon =>
+      const SvgGenImage('assets/icons/search_icon.svg');
+
   /// File path: assets/icons/setting.svg
   SvgGenImage get setting => const SvgGenImage('assets/icons/setting.svg');
 
@@ -177,6 +219,9 @@ class $AssetsIconsGen {
   SvgGenImage get tipsNavUnnactive =>
       const SvgGenImage('assets/icons/tips_nav_unnactive.svg');
 
+  /// File path: assets/icons/unlock.svg
+  SvgGenImage get unlock => const SvgGenImage('assets/icons/unlock.svg');
+
   /// List of all assets
   List<dynamic> get values => [
         add,
@@ -195,16 +240,27 @@ class $AssetsIconsGen {
         checkBoxFalse,
         checkBoxTrue,
         checkUnnactive,
+        close,
         facebookLogo,
+        fats,
+        filter,
         forumNavActive,
         forumNavUnnactive,
         goals,
         googleLogo,
+        heartEmpty,
+        heartFull,
         hidePassword,
+        hightFiber,
+        hightProtein,
         homeNavActive,
         homeNavUnnactive,
         hydrationBalance,
         informationError,
+        like,
+        lowCaloriesIcon,
+        lowCarb,
+        nothingFound,
         notification,
         personalData,
         profile,
@@ -215,13 +271,15 @@ class $AssetsIconsGen {
         recipiesNavUnnactive,
         scannerNavActive,
         scannerNavUnnactive,
+        searchIcon,
         setting,
         showPassword,
         statisticButton,
         subPlan,
         support,
         tipsNavActive,
-        tipsNavUnnactive
+        tipsNavUnnactive,
+        unlock
       ];
 }
 
@@ -233,6 +291,10 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/avatar.png
   AssetGenImage get avatar => const AssetGenImage('assets/images/avatar.png');
+
+  /// File path: assets/images/chickern_recipe.png
+  AssetGenImage get chickernRecipe =>
+      const AssetGenImage('assets/images/chickern_recipe.png');
 
   /// File path: assets/images/congrt_top.svg
   SvgGenImage get congrtTop =>
@@ -261,6 +323,7 @@ class $AssetsImagesGen {
   List<dynamic> get values => [
         active,
         avatar,
+        chickernRecipe,
         congrtTop,
         connectHealth,
         dietary,

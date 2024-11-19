@@ -32,6 +32,31 @@ class _MainLayoutState extends State<MainLayout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leadingWidth: MediaQuery.of(context).size.width,
+        automaticallyImplyLeading: false,
+        leading: Row(
+          children: [
+            spacingWH24,
+            Text(
+              'Hi, Sara!', // TODO(Volodymyr): Change name
+              style: context.theme.textTheme.headlineLarge
+                  ?.copyWith(color: DefaultPalette.kDarkGreen),
+            ),
+          ],
+        ),
+        actions: [
+          ScreenSideOffset.large(
+            child: GestureDetector(
+              onTap: () => PersistentNavBarNavigator.pushNewScreen(
+                context,
+                screen: const AccountScreen(),
+              ),
+              child: Assets.icons.profile.svg(),
+            ),
+          ),
+        ],
+      ),
       backgroundColor: DefaultPalette.white,
       body: SingleChildScrollView(
         child: SafeArea(
@@ -40,23 +65,6 @@ class _MainLayoutState extends State<MainLayout> {
               ScreenSideOffset.large(
                 child: Column(
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'Hi, Sara!', // TODO(Volodymyr): Change name
-                          style: context.theme.textTheme.headlineLarge
-                              ?.copyWith(color: DefaultPalette.kDarkGreen),
-                        ),
-                        GestureDetector(
-                          child: Assets.icons.profile.svg(),
-                          onTap: () => PersistentNavBarNavigator.pushNewScreen(
-                            context,
-                            screen: const AccountScreen(),
-                          ),
-                        ),
-                      ],
-                    ),
                     spacing40,
                     const CustomCircularPercentIndicator(
                       percent: 0.3,

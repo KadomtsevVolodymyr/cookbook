@@ -27,6 +27,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const ConnectHealthAppScreen(),
       );
     },
+    FavouriteRecipesRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const FavouriteRecipesScreen(),
+      );
+    },
     HomeRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -57,6 +63,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const OnboardingScreen(),
       );
     },
+    RecipesRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const RecipesScreen(),
+      );
+    },
     ReportsAnalyticsRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -67,6 +79,16 @@ abstract class _$AppRouter extends RootStackRouter {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const SignUpScreen(),
+      );
+    },
+    SingleRecipeRoute.name: (routeData) {
+      final args = routeData.argsAs<SingleRecipeRouteArgs>();
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: SingleRecipeScreen(
+          recipeItemModel: args.recipeItemModel,
+          key: args.key,
+        ),
       );
     },
     UserProfileSetupRoute.name: (routeData) {
@@ -102,6 +124,20 @@ class ConnectHealthAppRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'ConnectHealthAppRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [FavouriteRecipesScreen]
+class FavouriteRecipesRoute extends PageRouteInfo<void> {
+  const FavouriteRecipesRoute({List<PageRouteInfo>? children})
+      : super(
+          FavouriteRecipesRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'FavouriteRecipesRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }
@@ -177,6 +213,20 @@ class OnboardingRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [RecipesScreen]
+class RecipesRoute extends PageRouteInfo<void> {
+  const RecipesRoute({List<PageRouteInfo>? children})
+      : super(
+          RecipesRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'RecipesRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
 /// [ReportsAnalyticsScreen]
 class ReportsAnalyticsRoute extends PageRouteInfo<void> {
   const ReportsAnalyticsRoute({List<PageRouteInfo>? children})
@@ -202,6 +252,44 @@ class SignUpRoute extends PageRouteInfo<void> {
   static const String name = 'SignUpRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [SingleRecipeScreen]
+class SingleRecipeRoute extends PageRouteInfo<SingleRecipeRouteArgs> {
+  SingleRecipeRoute({
+    required RecipeItemModel recipeItemModel,
+    Key? key,
+    List<PageRouteInfo>? children,
+  }) : super(
+          SingleRecipeRoute.name,
+          args: SingleRecipeRouteArgs(
+            recipeItemModel: recipeItemModel,
+            key: key,
+          ),
+          initialChildren: children,
+        );
+
+  static const String name = 'SingleRecipeRoute';
+
+  static const PageInfo<SingleRecipeRouteArgs> page =
+      PageInfo<SingleRecipeRouteArgs>(name);
+}
+
+class SingleRecipeRouteArgs {
+  const SingleRecipeRouteArgs({
+    required this.recipeItemModel,
+    this.key,
+  });
+
+  final RecipeItemModel recipeItemModel;
+
+  final Key? key;
+
+  @override
+  String toString() {
+    return 'SingleRecipeRouteArgs{recipeItemModel: $recipeItemModel, key: $key}';
+  }
 }
 
 /// generated route for

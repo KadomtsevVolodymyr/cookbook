@@ -1,6 +1,7 @@
 import 'package:cookbook/extensions/extensions.dart';
 import 'package:cookbook/generated/assets/assets.gen.dart';
 import 'package:cookbook/presentation/main_screen/main_screen.dart';
+import 'package:cookbook/presentation/recipes_screen/recipes_screen.dart';
 import 'package:cookbook/widgets/molecules/custom_navbar_item.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
@@ -54,7 +55,7 @@ class _HomeLayoutState extends State<HomeLayout> {
   List<Widget> _buildScreens() {
     return [
       const MainScreen(),
-      Container(),
+      const RecipesScreen(),
       Container(),
       Container(),
       Container(),

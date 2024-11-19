@@ -7,12 +7,16 @@ class CustomButton extends StatelessWidget {
   final Widget text;
   final VoidCallback onPressed;
   final BoxDecoration decoration;
+  final Widget? prefixIcon;
+  final Widget? suffixIcon;
 
   // Primary button style with white gradient background
   CustomButton.primary({
     required this.text,
     required this.onPressed,
     super.key,
+    this.prefixIcon,
+    this.suffixIcon,
   }) : decoration = BoxDecoration(
           gradient: const LinearGradient(
             begin: Alignment.topLeft,
@@ -32,6 +36,8 @@ class CustomButton extends StatelessWidget {
     required this.text,
     required this.onPressed,
     super.key,
+    this.prefixIcon,
+    this.suffixIcon,
   }) : decoration = BoxDecoration(
           color: Colors.transparent,
           border: Border.all(color: const Color(0xFFFFFFFF), width: 1),
@@ -43,6 +49,8 @@ class CustomButton extends StatelessWidget {
     required this.text,
     required this.onPressed,
     super.key,
+    this.prefixIcon,
+    this.suffixIcon,
   }) : decoration = BoxDecoration(
           gradient: const LinearGradient(
             begin: Alignment.topLeft,
@@ -52,7 +60,6 @@ class CustomButton extends StatelessWidget {
               Color(0xFF75DB7E),
             ],
             stops: [0.0, 1.0],
-            // transform: GradientRotation(274.34 * (pi / 180)),
           ),
           borderRadius: BorderRadius.circular(99),
           boxShadow: const [
@@ -73,7 +80,22 @@ class CustomButton extends StatelessWidget {
         padding: EdgeInsets.symmetric(vertical: 18.0.s),
         decoration: decoration,
         alignment: Alignment.center,
-        child: text,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (prefixIcon != null)
+              Padding(
+                padding: EdgeInsets.only(right: 10.0.s),
+                child: prefixIcon,
+              ),
+            text,
+            if (suffixIcon != null)
+              Padding(
+                padding: EdgeInsets.only(left: 10.0.s),
+                child: suffixIcon,
+              ),
+          ],
+        ),
       ),
     );
   }

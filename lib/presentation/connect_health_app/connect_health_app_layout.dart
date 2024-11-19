@@ -93,7 +93,7 @@ class _ConnectHealthAppLayoutState extends State<ConnectHealthAppLayout> {
   GestureDetector _skipText(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        context.router.replaceAll([const LogInSuccessRoute()]);
+        context.router.replaceAll([const HomeRoute()]);
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,

@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 
 class GradientContainer extends StatelessWidget {
   final Widget child;
+  final EdgeInsetsGeometry? padding;
 
   const GradientContainer({
     required this.child,
     super.key,
+    this.padding,
   });
 
   @override
@@ -29,7 +31,7 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding: EdgeInsets.all(20.0.s),
+        padding: padding ?? EdgeInsets.all(20.0.s),
         child: child,
       ),
     );

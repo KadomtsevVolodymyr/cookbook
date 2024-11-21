@@ -91,6 +91,12 @@ abstract class _$AppRouter extends RootStackRouter {
         ),
       );
     },
+    TipsRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const TipsScreen(),
+      );
+    },
     UserProfileSetupRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -290,6 +296,20 @@ class SingleRecipeRouteArgs {
   String toString() {
     return 'SingleRecipeRouteArgs{recipeItemModel: $recipeItemModel, key: $key}';
   }
+}
+
+/// generated route for
+/// [TipsScreen]
+class TipsRoute extends PageRouteInfo<void> {
+  const TipsRoute({List<PageRouteInfo>? children})
+      : super(
+          TipsRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'TipsRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
 }
 
 /// generated route for

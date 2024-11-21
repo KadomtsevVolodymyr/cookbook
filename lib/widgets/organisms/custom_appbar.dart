@@ -54,6 +54,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               style: theme.headlineLarge?.copyWith(
                 color: DefaultPalette.kDarkGreen,
               ),
+              textAlign: TextAlign.center,
             )
           : null,
       actions: [

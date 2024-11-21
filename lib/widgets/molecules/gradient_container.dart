@@ -5,18 +5,20 @@ import 'package:flutter/material.dart';
 class GradientContainer extends StatelessWidget {
   final Widget child;
   final EdgeInsetsGeometry? padding;
+  final BorderRadius? radius;
 
   const GradientContainer({
     required this.child,
     super.key,
     this.padding,
+    this.radius,
   });
 
   @override
   Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.0.s),
+        borderRadius: radius ?? BorderRadius.circular(10.0.s),
         border: Border.all(
           color: DefaultPalette.backgroundFormColor,
         ),

@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 
 class Spacing {
   static final spacing40 = SizedBox(height: 40.0.s);
+  static final spacing30 = SizedBox(height: 30.0.s);
   static final spacing24 = SizedBox(height: 24.0.s);
   static final spacing20 = SizedBox(height: 20.0.s);
   static final spacing16 = SizedBox(height: 16.0.s);

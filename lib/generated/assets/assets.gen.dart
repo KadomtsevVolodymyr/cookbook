@@ -315,9 +315,16 @@ class $AssetsImagesGen {
   AssetGenImage get mealPlan =>
       const AssetGenImage('assets/images/meal_plan.png');
 
+  /// File path: assets/images/nutrition_balance.svg
+  SvgGenImage get nutritionBalance =>
+      const SvgGenImage('assets/images/nutrition_balance.svg');
+
   /// File path: assets/images/onboarding_top.svg
   SvgGenImage get onboardingTop =>
       const SvgGenImage('assets/images/onboarding_top.svg');
+
+  /// File path: assets/images/tips_bg.svg
+  SvgGenImage get tipsBg => const SvgGenImage('assets/images/tips_bg.svg');
 
   /// List of all assets
   List<dynamic> get values => [
@@ -329,7 +336,9 @@ class $AssetsImagesGen {
         dietary,
         healthGoal,
         mealPlan,
-        onboardingTop
+        nutritionBalance,
+        onboardingTop,
+        tipsBg
       ];
 }
 

@@ -1,15 +1,19 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/navigation/app_router.dart';
-import 'package:cookbook/widgets/molecules/country_picker.dart';
-import 'package:cookbook/widgets/molecules/custom_button.dart';
-import 'package:cookbook/widgets/molecules/gradient_container.dart';
-import 'package:cookbook/widgets/molecules/scrollable_decorated_container.dart';
-import 'package:cookbook/widgets/organisms/custom_checkbox_list.dart';
-import 'package:cookbook/widgets/organisms/screen_side_offset.dart';
-import 'package:cookbook/widgets/organisms/yes_no_selection.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/data/model/user_settings.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/navigation/app_router.dart';
+import 'package:balancebyte/presentation/user_profile_setup_screen/cubit/user_profile_set_up_cubit.dart';
+import 'package:balancebyte/utils/diet_utils.dart';
+import 'package:balancebyte/widgets/molecules/country_picker.dart';
+import 'package:balancebyte/widgets/molecules/custom_button.dart';
+import 'package:balancebyte/widgets/molecules/gradient_container.dart';
+import 'package:balancebyte/widgets/molecules/scrollable_decorated_container.dart';
+import 'package:balancebyte/widgets/organisms/custom_checkbox_list.dart';
+import 'package:balancebyte/widgets/organisms/screen_side_offset.dart';
+import 'package:balancebyte/widgets/organisms/yes_no_selection.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SetUpFifth extends StatefulWidget {
   const SetUpFifth({required this.onNext, required this.onSkip, super.key});
@@ -122,7 +126,11 @@ class _SetUpFifthState extends State<SetUpFifth> {
                 style: context.theme.textTheme.headlineMedium,
               ),
               onPressed: () {
-                context.router.replaceAll([const ConnectHealthAppRoute()]);
+                final userSettings =
+                    UserSettings.fromSelectedOptions(notificationsOptions);
+                print(userSettings);
+                context.read<UserProfileSetUpCubit>().setDiet(userSettings);
+                widget.onNext();
               },
             ),
             spacing24,

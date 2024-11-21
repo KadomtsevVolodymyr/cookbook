@@ -1,4 +1,4 @@
-import 'package:cookbook/widgets/molecules/step_item.dart';
+import 'package:balancebyte/widgets/molecules/step_item.dart';
 import 'package:flutter/material.dart';
 
 class StepList extends StatelessWidget {

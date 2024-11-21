@@ -1,7 +1,7 @@
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
-import 'package:cookbook/widgets/molecules/gradient_container.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
+import 'package:balancebyte/widgets/molecules/gradient_container.dart';
 import 'package:flutter/material.dart';
 
 class ChallengeStatusWidget extends StatelessWidget {

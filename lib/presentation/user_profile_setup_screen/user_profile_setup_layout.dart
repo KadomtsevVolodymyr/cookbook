@@ -1,11 +1,11 @@
-import 'package:cookbook/presentation/user_profile_setup_screen/page_view_screens/setup_fifth.dart';
-import 'package:cookbook/presentation/user_profile_setup_screen/page_view_screens/setup_first.dart';
-import 'package:cookbook/presentation/user_profile_setup_screen/page_view_screens/setup_fourth.dart';
-import 'package:cookbook/presentation/user_profile_setup_screen/page_view_screens/setup_second.dart';
-import 'package:cookbook/presentation/user_profile_setup_screen/page_view_screens/setup_third.dart';
-import 'package:cookbook/utils/image_picker.dart';
-import 'package:cookbook/widgets/molecules/gradient_background.dart';
-import 'package:cookbook/widgets/organisms/profile_completion.dart';
+import 'package:balancebyte/presentation/user_profile_setup_screen/page_view_screens/setup_fifth.dart';
+import 'package:balancebyte/presentation/user_profile_setup_screen/page_view_screens/setup_first.dart';
+import 'package:balancebyte/presentation/user_profile_setup_screen/page_view_screens/setup_fourth.dart';
+import 'package:balancebyte/presentation/user_profile_setup_screen/page_view_screens/setup_second.dart';
+import 'package:balancebyte/presentation/user_profile_setup_screen/page_view_screens/setup_third.dart';
+import 'package:balancebyte/utils/image_picker.dart';
+import 'package:balancebyte/widgets/molecules/gradient_background.dart';
+import 'package:balancebyte/widgets/organisms/profile_completion.dart';
 import 'package:flutter/material.dart';
 
 class UserProfileSetupLayout extends StatefulWidget {
@@ -54,23 +54,23 @@ class _UserProfileSetupLayoutState extends State<UserProfileSetupLayout> {
                 children: [
                   SetUpFirst(
                     onNext: onNextPage,
-                    onSkip: () {},
+                    onSkip: onSkip,
                   ),
                   SetUpSecond(
                     onNext: onNextPage,
-                    onSkip: () {},
+                    onSkip: onSkip,
                   ),
                   SetUpThird(
                     onNext: onNextPage,
-                    onSkip: () {},
+                    onSkip: onSkip,
                   ),
                   SetUpFourth(
                     onNext: onNextPage,
-                    onSkip: () {},
+                    onSkip: onSkip,
                   ),
                   SetUpFifth(
                     onNext: onNextPage,
-                    onSkip: () {},
+                    onSkip: onSkip,
                   ),
                 ],
               ),
@@ -82,6 +82,13 @@ class _UserProfileSetupLayoutState extends State<UserProfileSetupLayout> {
   }
 
   void onNextPage() {
+    _pageController.nextPage(
+      duration: const Duration(milliseconds: 300),
+      curve: Curves.easeInOut,
+    );
+  }
+
+  void onSkip() {
     _pageController.nextPage(
       duration: const Duration(milliseconds: 300),
       curve: Curves.easeInOut,

@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:cookbook/extensions/extensions.dart';
+import 'package:balancebyte/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {

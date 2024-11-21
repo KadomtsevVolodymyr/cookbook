@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-enum NetworkRequestType { get, post, put, delete }
+enum NetworkRequestType { get, post, put, delete, patch }
 
 class NetworkRequest {
   const NetworkRequest({

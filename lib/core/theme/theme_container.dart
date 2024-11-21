@@ -1,5 +1,5 @@
-import 'package:cookbook/core/theme/solution_theme.dart';
-import 'package:cookbook/core/theme/theme_vendor_one.dart';
+import 'package:balancebyte/core/theme/solution_theme.dart';
+import 'package:balancebyte/core/theme/theme_vendor_one.dart';
 
 abstract class ThemeFactory {
   static SolutionTheme get lightTheme => _vendorTheme.lightTheme;

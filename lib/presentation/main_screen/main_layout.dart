@@ -1,14 +1,14 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
-import 'package:cookbook/navigation/app_router.dart';
-import 'package:cookbook/presentation/account_screen/account_screen.dart';
-import 'package:cookbook/widgets/molecules/circular_progress_indicator.dart';
-import 'package:cookbook/widgets/molecules/custom_button.dart';
-import 'package:cookbook/widgets/organisms/challenge_status.dart';
-import 'package:cookbook/widgets/organisms/horizontal_meal_list.dart';
-import 'package:cookbook/widgets/organisms/screen_side_offset.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
+import 'package:balancebyte/navigation/app_router.dart';
+import 'package:balancebyte/presentation/account_screen/account_screen.dart';
+import 'package:balancebyte/widgets/molecules/circular_progress_indicator.dart';
+import 'package:balancebyte/widgets/molecules/custom_button.dart';
+import 'package:balancebyte/widgets/organisms/challenge_status.dart';
+import 'package:balancebyte/widgets/organisms/horizontal_meal_list.dart';
+import 'package:balancebyte/widgets/organisms/screen_side_offset.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 

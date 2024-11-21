@@ -1,4 +1,4 @@
-import 'package:cookbook/domain/entities/result.dart';
+import 'package:balancebyte/domain/entities/result.dart';
 
 sealed class NetworkResponse<T> {
   NetworkResponse();

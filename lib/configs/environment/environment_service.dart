@@ -1,4 +1,4 @@
-import 'package:cookbook/configs/app_config.dart';
+import 'package:balancebyte/configs/app_config.dart';
 
 ///Provides environment specific values
 class EnvironmentService {

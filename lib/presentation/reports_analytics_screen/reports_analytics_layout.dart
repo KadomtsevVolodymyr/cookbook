@@ -1,10 +1,17 @@
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
-import 'package:cookbook/data/model/reusable_card_item.dart';
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
-import 'package:cookbook/widgets/molecules/gradient_container.dart';
-import 'package:cookbook/widgets/molecules/reusable_card.dart';
-import 'package:cookbook/widgets/organisms/screen_side_offset.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/data/model/reusable_card_item.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
+import 'package:balancebyte/presentation/analytics/bmi_screen/bmi_screen.dart';
+import 'package:balancebyte/presentation/analytics/calories_screen/calories_screen.dart';
+import 'package:balancebyte/presentation/analytics/food_group_screen/food_group_screen.dart';
+import 'package:balancebyte/presentation/analytics/hydration_levels/hydration_levels_screen.dart';
+import 'package:balancebyte/presentation/analytics/macro_element/macro_element_screen.dart';
+import 'package:balancebyte/presentation/analytics/perfomance_screen/perfomance_screen.dart';
+import 'package:balancebyte/presentation/analytics/weight_progress/weight_progress_screen.dart';
+import 'package:balancebyte/widgets/molecules/gradient_container.dart';
+import 'package:balancebyte/widgets/molecules/reusable_card.dart';
+import 'package:balancebyte/widgets/organisms/screen_side_offset.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
@@ -170,31 +177,52 @@ class _ReportsAnalyticsLayoutState extends State<ReportsAnalyticsLayout>
                   items: [
                     ReusableCardItem(
                       text: 'Calories',
-                      onTap: () {},
+                      onTap: () => PersistentNavBarNavigator.pushNewScreen(
+                        context,
+                        screen: const CaloriesScreen(),
+                      ),
                     ),
                     ReusableCardItem(
                       text: 'BMI',
-                      onTap: () {},
+                      onTap: () => PersistentNavBarNavigator.pushNewScreen(
+                        context,
+                        screen: const BmiScreen(),
+                      ),
                     ),
                     ReusableCardItem(
                       text: 'Macronutrient Distribution',
-                      onTap: () {},
+                      onTap: () => PersistentNavBarNavigator.pushNewScreen(
+                        context,
+                        screen: const MacroElementScreen(),
+                      ),
                     ),
                     ReusableCardItem(
                       text: 'Weight Progress',
-                      onTap: () {},
+                      onTap: () => PersistentNavBarNavigator.pushNewScreen(
+                        context,
+                        screen: const WeightProgressScreen(),
+                      ),
                     ),
                     ReusableCardItem(
                       text: 'Food Group Intake',
-                      onTap: () {},
+                      onTap: () => PersistentNavBarNavigator.pushNewScreen(
+                        context,
+                        screen: const FoodGroupScreen(),
+                      ),
                     ),
                     ReusableCardItem(
                       text: 'Hydration Levels',
-                      onTap: () {},
+                      onTap: () => PersistentNavBarNavigator.pushNewScreen(
+                        context,
+                        screen: const HydrationLevelsScreen(),
+                      ),
                     ),
                     ReusableCardItem(
                       text: 'Exercise Tracking & Performance',
-                      onTap: () {},
+                      onTap: () => PersistentNavBarNavigator.pushNewScreen(
+                        context,
+                        screen: const PerformanceScreen(),
+                      ),
                     ),
                   ],
                 ),

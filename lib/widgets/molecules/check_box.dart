@@ -1,8 +1,8 @@
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
-import 'package:cookbook/generated/l10n.dart';
-import 'package:cookbook/widgets/molecules/error_form_text.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
+import 'package:balancebyte/generated/l10n.dart';
+import 'package:balancebyte/widgets/molecules/error_form_text.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 

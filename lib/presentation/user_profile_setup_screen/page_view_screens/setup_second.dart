@@ -1,11 +1,16 @@
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
-import 'package:cookbook/widgets/molecules/custom_button.dart';
-import 'package:cookbook/widgets/molecules/scrollable_decorated_container.dart';
-import 'package:cookbook/widgets/organisms/custom_checkbox_list.dart';
-import 'package:cookbook/widgets/organisms/screen_side_offset.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/data/model/user_settings.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
+import 'package:balancebyte/presentation/auth/cubit/auth_cubit.dart';
+import 'package:balancebyte/presentation/user_profile_setup_screen/cubit/user_profile_set_up_cubit.dart';
+import 'package:balancebyte/utils/diet_utils.dart';
+import 'package:balancebyte/widgets/molecules/custom_button.dart';
+import 'package:balancebyte/widgets/molecules/scrollable_decorated_container.dart';
+import 'package:balancebyte/widgets/organisms/custom_checkbox_list.dart';
+import 'package:balancebyte/widgets/organisms/screen_side_offset.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SetUpSecond extends StatefulWidget {
   const SetUpSecond({required this.onNext, required this.onSkip, super.key});
@@ -27,7 +32,7 @@ class _SetUpSecondState extends State<SetUpSecond> {
     "Gluten-Free": false,
     "Dairy-Free": false,
     "Low-Carb": false,
-    "Custom Diet:": false,
+    "Other Diet:": false,
   };
 
   final TextEditingController nameController = TextEditingController();
@@ -88,7 +93,13 @@ class _SetUpSecondState extends State<SetUpSecond> {
                     "Next",
                     style: context.theme.textTheme.headlineMedium,
                   ),
-                  onPressed: widget.onNext,
+                  onPressed: () {
+                    final userSettings =
+                        UserSettings.fromSelectedOptions(dietOptions);
+                    print(userSettings);
+                    context.read<UserProfileSetUpCubit>().setDiet(userSettings);
+                    widget.onNext();
+                  },
                 ),
                 spacing24,
                 _skipText(context),

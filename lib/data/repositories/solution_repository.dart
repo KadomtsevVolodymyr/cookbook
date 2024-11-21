@@ -1,5 +1,5 @@
-import 'package:cookbook/data/datasource/local/facade/solution_storage_interface.dart';
-import 'package:cookbook/domain/repositories/solution_repository_interface.dart';
+import 'package:balancebyte/data/datasource/local/facade/solution_storage_interface.dart';
+import 'package:balancebyte/domain/repositories/solution_repository_interface.dart';
 
 class SolutionRepository implements ISolutionRepository {
   SolutionRepository({

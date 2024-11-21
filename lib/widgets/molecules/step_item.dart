@@ -1,7 +1,7 @@
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/widgets/atoms/dashed_line_painter.dart';
-import 'package:cookbook/widgets/atoms/spacing.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/widgets/atoms/dashed_line_painter.dart';
+import 'package:balancebyte/widgets/atoms/spacing.dart';
 import 'package:flutter/material.dart';
 
 class StepItem extends StatelessWidget {

@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:cookbook/presentation/home_screen/home_layout.dart';
+import 'package:balancebyte/presentation/home_screen/home_layout.dart';
 import 'package:flutter/material.dart';
 
 @RoutePage()

@@ -1,8 +1,8 @@
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
-import 'package:cookbook/core/theme/theme_palette/default_shadow_palette.dart';
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
-import 'package:cookbook/widgets/organisms/screen_side_offset.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_shadow_palette.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
+import 'package:balancebyte/widgets/organisms/screen_side_offset.dart';
 import 'package:flutter/material.dart';
 
 class FilterDrawer extends StatefulWidget {

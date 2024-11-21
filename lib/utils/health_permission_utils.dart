@@ -9,8 +9,13 @@ class HealthPermissionUtil {
 
   /// Provides a preset of commonly requested health data types, with support for future additions.
   static List<HealthDataType> get defaultTypes => [
-        HealthDataType.STEPS,
-        HealthDataType.BLOOD_GLUCOSE,
+        // HealthDataType.STEPS,
+        // HealthDataType.BLOOD_GLUCOSE,
+        // HealthDataType.ATRIAL_FIBRILLATION_BURDEN,
+        // HealthDataType.AUDIOGRAM,
+        // HealthDataType.BIRTH_DATE,
+        HealthDataType.HEART_RATE,
+
         // Add more HealthDataTypes as needed for future requirements.
       ];
 

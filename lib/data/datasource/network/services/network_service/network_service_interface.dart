@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:dio/dio.dart';
-import 'package:cookbook/data/datasource/network/exchange_models/request.dart';
-import 'package:cookbook/data/datasource/network/exchange_models/response.dart';
+import 'package:balancebyte/data/datasource/network/exchange_models/request.dart';
+import 'package:balancebyte/data/datasource/network/exchange_models/response.dart';
 
 typedef OnParse<T> = T Function(Response<dynamic>);
 

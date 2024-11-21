@@ -1,5 +1,5 @@
-import 'package:cookbook/extensions/num.dart';
-import 'package:cookbook/widgets/molecules/custom_form_field.dart';
+import 'package:balancebyte/extensions/num.dart';
+import 'package:balancebyte/widgets/molecules/custom_form_field.dart';
 import 'package:flutter/material.dart';
 
 class RegisterForm extends StatelessWidget {
@@ -7,6 +7,7 @@ class RegisterForm extends StatelessWidget {
     required this.usernameController,
     required this.emailController,
     required this.passwordController,
+    this.fieldLabel,
     this.showUsernameField = true,
     super.key,
   });
@@ -15,6 +16,7 @@ class RegisterForm extends StatelessWidget {
   final TextEditingController emailController;
   final TextEditingController passwordController;
   final bool showUsernameField;
+  final String? fieldLabel;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,7 @@ class RegisterForm extends StatelessWidget {
           ),
         if (!showUsernameField)
           CustomFormField.username(
-            label: 'Email or Username',
+            label: fieldLabel ?? "Email or Username",
             controller: usernameController,
           ),
         if (showUsernameField)

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "165730614441",
+    "project_id": "balancebyte-d9d59",
+    "storage_bucket": "balancebyte-d9d59.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165730614441:android:19409abfbd6e2a132ebdb8",
+        "android_client_info": {
+          "package_name": "com.example.balancebyte"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165730614441-hjpik4ljooa6l319mpfc8mqfop30q1d3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.balancebyte",
+            "certificate_hash": "d83b31d9b7c9bdce9f669c43f189d3e1b76671cd"
+          }
+        },
+        {
+          "client_id": "165730614441-0dujp2batrbh68jeidsk5vomqfjl62gi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATZOpX1R5C8l1OaejamJlJljBGUzTUf1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165730614441-0dujp2batrbh68jeidsk5vomqfjl62gi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "165730614441-obmjtl1jabqnql9rrtk5r9aaqknt6aft.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.balancebyte"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,5 @@
-import 'package:cookbook/data/datasource/local/facade/solution_storage_interface.dart';
-import 'package:cookbook/utils/hive_helper.dart';
+import 'package:balancebyte/data/datasource/local/facade/solution_storage_interface.dart';
+import 'package:balancebyte/utils/hive_helper.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class SolutionStorage implements ISolutionStorage {

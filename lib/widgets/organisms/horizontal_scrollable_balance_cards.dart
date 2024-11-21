@@ -1,7 +1,6 @@
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/presentation/single_recipe_screen/single_recipe_screen.dart';
-import 'package:cookbook/presentation/single_tip_screen/single_tip_screen.dart';
-import 'package:cookbook/widgets/atoms/spacing.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/presentation/single_tip_screen/single_tip_screen.dart';
+import 'package:balancebyte/widgets/atoms/spacing.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 

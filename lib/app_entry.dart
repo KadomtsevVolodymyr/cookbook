@@ -1,8 +1,8 @@
-import 'package:cookbook/core/theme/theme_container.dart';
-import 'package:cookbook/domain/repositories/solution_repository_interface.dart';
-import 'package:cookbook/generated/l10n.dart';
-import 'package:cookbook/navigation/app_router.dart';
-import 'package:cookbook/solution_injection.dart';
+import 'package:balancebyte/core/theme/theme_container.dart';
+import 'package:balancebyte/domain/repositories/solution_repository_interface.dart';
+import 'package:balancebyte/generated/l10n.dart';
+import 'package:balancebyte/navigation/app_router.dart';
+import 'package:balancebyte/solution_injection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';

@@ -21,10 +21,56 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const AccountScreen(),
       );
     },
+    AddStoryRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const AddStoryScreen(),
+      );
+    },
+    BmiRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const BmiScreen(),
+      );
+    },
+    CaloriesRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const CaloriesScreen(),
+      );
+    },
+    CameraRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const CameraScreen(),
+      );
+    },
+    CommunityRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const CommunityScreen(),
+      );
+    },
     ConnectHealthAppRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const ConnectHealthAppScreen(),
+      );
+    },
+    EmailConfirmationRoute.name: (routeData) {
+      final args = routeData.argsAs<EmailConfirmationRouteArgs>();
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: EmailConfirmationScreen(
+          email: args.email,
+          key: args.key,
+        ),
+      );
+    },
+    EmailSuccessRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const EmailSuccessScreen(),
       );
     },
     FavouriteRecipesRoute.name: (routeData) {
@@ -33,10 +79,34 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const FavouriteRecipesScreen(),
       );
     },
+    FollowersRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const FollowersScreen(),
+      );
+    },
+    FollowingRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const FollowingScreen(),
+      );
+    },
+    FoodGroupRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const FoodGroupScreen(),
+      );
+    },
     HomeRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const HomeScreen(),
+      );
+    },
+    HydrationLevelsRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const HydrationLevelsScreen(),
       );
     },
     LogInRoute.name: (routeData) {
@@ -51,6 +121,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const LogInSuccessScreen(),
       );
     },
+    MacroElementRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const MacroElementScreen(),
+      );
+    },
     MainRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -63,6 +139,22 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const OnboardingScreen(),
       );
     },
+    PasswordRecoveryRoute.name: (routeData) {
+      final args = routeData.argsAs<PasswordRecoveryRouteArgs>();
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: PasswordRecoveryScreen(
+          isPassRecovery: args.isPassRecovery,
+          key: args.key,
+        ),
+      );
+    },
+    PerformanceRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const PerformanceScreen(),
+      );
+    },
     RecipesRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -73,6 +165,24 @@ abstract class _$AppRouter extends RootStackRouter {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const ReportsAnalyticsScreen(),
+      );
+    },
+    ResetPasswordRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const ResetPasswordScreen(),
+      );
+    },
+    ScannerRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const ScannerScreen(),
+      );
+    },
+    SettingsRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const SettingsScreen(),
       );
     },
     SignUpRoute.name: (routeData) {
@@ -91,6 +201,18 @@ abstract class _$AppRouter extends RootStackRouter {
         ),
       );
     },
+    SingleTipRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const SingleTipScreen(),
+      );
+    },
+    SupportRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const SupportScreen(),
+      );
+    },
     TipsRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -101,6 +223,12 @@ abstract class _$AppRouter extends RootStackRouter {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const UserProfileSetupScreen(),
+      );
+    },
+    WeightProgressRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const WeightProgressScreen(),
       );
     },
   };
@@ -121,6 +249,76 @@ class AccountRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [AddStoryScreen]
+class AddStoryRoute extends PageRouteInfo<void> {
+  const AddStoryRoute({List<PageRouteInfo>? children})
+      : super(
+          AddStoryRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'AddStoryRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [BmiScreen]
+class BmiRoute extends PageRouteInfo<void> {
+  const BmiRoute({List<PageRouteInfo>? children})
+      : super(
+          BmiRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'BmiRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [CaloriesScreen]
+class CaloriesRoute extends PageRouteInfo<void> {
+  const CaloriesRoute({List<PageRouteInfo>? children})
+      : super(
+          CaloriesRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'CaloriesRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [CameraScreen]
+class CameraRoute extends PageRouteInfo<void> {
+  const CameraRoute({List<PageRouteInfo>? children})
+      : super(
+          CameraRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'CameraRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [CommunityScreen]
+class CommunityRoute extends PageRouteInfo<void> {
+  const CommunityRoute({List<PageRouteInfo>? children})
+      : super(
+          CommunityRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'CommunityRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
 /// [ConnectHealthAppScreen]
 class ConnectHealthAppRoute extends PageRouteInfo<void> {
   const ConnectHealthAppRoute({List<PageRouteInfo>? children})
@@ -130,6 +328,58 @@ class ConnectHealthAppRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'ConnectHealthAppRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [EmailConfirmationScreen]
+class EmailConfirmationRoute extends PageRouteInfo<EmailConfirmationRouteArgs> {
+  EmailConfirmationRoute({
+    required String email,
+    Key? key,
+    List<PageRouteInfo>? children,
+  }) : super(
+          EmailConfirmationRoute.name,
+          args: EmailConfirmationRouteArgs(
+            email: email,
+            key: key,
+          ),
+          initialChildren: children,
+        );
+
+  static const String name = 'EmailConfirmationRoute';
+
+  static const PageInfo<EmailConfirmationRouteArgs> page =
+      PageInfo<EmailConfirmationRouteArgs>(name);
+}
+
+class EmailConfirmationRouteArgs {
+  const EmailConfirmationRouteArgs({
+    required this.email,
+    this.key,
+  });
+
+  final String email;
+
+  final Key? key;
+
+  @override
+  String toString() {
+    return 'EmailConfirmationRouteArgs{email: $email, key: $key}';
+  }
+}
+
+/// generated route for
+/// [EmailSuccessScreen]
+class EmailSuccessRoute extends PageRouteInfo<void> {
+  const EmailSuccessRoute({List<PageRouteInfo>? children})
+      : super(
+          EmailSuccessRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'EmailSuccessRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }
@@ -149,6 +399,48 @@ class FavouriteRecipesRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [FollowersScreen]
+class FollowersRoute extends PageRouteInfo<void> {
+  const FollowersRoute({List<PageRouteInfo>? children})
+      : super(
+          FollowersRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'FollowersRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [FollowingScreen]
+class FollowingRoute extends PageRouteInfo<void> {
+  const FollowingRoute({List<PageRouteInfo>? children})
+      : super(
+          FollowingRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'FollowingRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [FoodGroupScreen]
+class FoodGroupRoute extends PageRouteInfo<void> {
+  const FoodGroupRoute({List<PageRouteInfo>? children})
+      : super(
+          FoodGroupRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'FoodGroupRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
 /// [HomeScreen]
 class HomeRoute extends PageRouteInfo<void> {
   const HomeRoute({List<PageRouteInfo>? children})
@@ -158,6 +450,20 @@ class HomeRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'HomeRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [HydrationLevelsScreen]
+class HydrationLevelsRoute extends PageRouteInfo<void> {
+  const HydrationLevelsRoute({List<PageRouteInfo>? children})
+      : super(
+          HydrationLevelsRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'HydrationLevelsRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }
@@ -191,6 +497,20 @@ class LogInSuccessRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [MacroElementScreen]
+class MacroElementRoute extends PageRouteInfo<void> {
+  const MacroElementRoute({List<PageRouteInfo>? children})
+      : super(
+          MacroElementRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'MacroElementRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
 /// [MainScreen]
 class MainRoute extends PageRouteInfo<void> {
   const MainRoute({List<PageRouteInfo>? children})
@@ -219,6 +539,58 @@ class OnboardingRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [PasswordRecoveryScreen]
+class PasswordRecoveryRoute extends PageRouteInfo<PasswordRecoveryRouteArgs> {
+  PasswordRecoveryRoute({
+    required bool isPassRecovery,
+    Key? key,
+    List<PageRouteInfo>? children,
+  }) : super(
+          PasswordRecoveryRoute.name,
+          args: PasswordRecoveryRouteArgs(
+            isPassRecovery: isPassRecovery,
+            key: key,
+          ),
+          initialChildren: children,
+        );
+
+  static const String name = 'PasswordRecoveryRoute';
+
+  static const PageInfo<PasswordRecoveryRouteArgs> page =
+      PageInfo<PasswordRecoveryRouteArgs>(name);
+}
+
+class PasswordRecoveryRouteArgs {
+  const PasswordRecoveryRouteArgs({
+    required this.isPassRecovery,
+    this.key,
+  });
+
+  final bool isPassRecovery;
+
+  final Key? key;
+
+  @override
+  String toString() {
+    return 'PasswordRecoveryRouteArgs{isPassRecovery: $isPassRecovery, key: $key}';
+  }
+}
+
+/// generated route for
+/// [PerformanceScreen]
+class PerformanceRoute extends PageRouteInfo<void> {
+  const PerformanceRoute({List<PageRouteInfo>? children})
+      : super(
+          PerformanceRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'PerformanceRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
 /// [RecipesScreen]
 class RecipesRoute extends PageRouteInfo<void> {
   const RecipesRoute({List<PageRouteInfo>? children})
@@ -242,6 +614,48 @@ class ReportsAnalyticsRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'ReportsAnalyticsRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [ResetPasswordScreen]
+class ResetPasswordRoute extends PageRouteInfo<void> {
+  const ResetPasswordRoute({List<PageRouteInfo>? children})
+      : super(
+          ResetPasswordRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ResetPasswordRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [ScannerScreen]
+class ScannerRoute extends PageRouteInfo<void> {
+  const ScannerRoute({List<PageRouteInfo>? children})
+      : super(
+          ScannerRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ScannerRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [SettingsScreen]
+class SettingsRoute extends PageRouteInfo<void> {
+  const SettingsRoute({List<PageRouteInfo>? children})
+      : super(
+          SettingsRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SettingsRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }
@@ -299,6 +713,34 @@ class SingleRecipeRouteArgs {
 }
 
 /// generated route for
+/// [SingleTipScreen]
+class SingleTipRoute extends PageRouteInfo<void> {
+  const SingleTipRoute({List<PageRouteInfo>? children})
+      : super(
+          SingleTipRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SingleTipRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [SupportScreen]
+class SupportRoute extends PageRouteInfo<void> {
+  const SupportRoute({List<PageRouteInfo>? children})
+      : super(
+          SupportRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SupportRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
 /// [TipsScreen]
 class TipsRoute extends PageRouteInfo<void> {
   const TipsRoute({List<PageRouteInfo>? children})
@@ -322,6 +764,20 @@ class UserProfileSetupRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'UserProfileSetupRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [WeightProgressScreen]
+class WeightProgressRoute extends PageRouteInfo<void> {
+  const WeightProgressRoute({List<PageRouteInfo>? children})
+      : super(
+          WeightProgressRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'WeightProgressRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

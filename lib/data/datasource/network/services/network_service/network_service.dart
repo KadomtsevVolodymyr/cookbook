@@ -1,10 +1,12 @@
 import 'dart:async';
+import 'dart:io';
 
-import 'package:cookbook/data/datasource/network/exchange_models/action_errors.dart';
-import 'package:cookbook/data/datasource/network/exchange_models/request.dart';
-import 'package:cookbook/data/datasource/network/exchange_models/response.dart';
-import 'package:cookbook/data/datasource/network/services/network_service/network_service_interface.dart';
+import 'package:balancebyte/data/datasource/network/exchange_models/action_errors.dart';
+import 'package:balancebyte/data/datasource/network/exchange_models/request.dart';
+import 'package:balancebyte/data/datasource/network/exchange_models/response.dart';
+import 'package:balancebyte/data/datasource/network/services/network_service/network_service_interface.dart';
 import 'package:dio/dio.dart';
+import 'package:dio/io.dart';
 import 'package:dio_smart_retry/dio_smart_retry.dart';
 
 class NetworkService implements INetworkService {
@@ -30,9 +32,15 @@ class NetworkService implements INetworkService {
         ],
       ),
     );
+    (_dio.httpClientAdapter as IOHttpClientAdapter).onHttpClientCreate =
+        (HttpClient client) {
+      client.badCertificateCallback =
+          (X509Certificate cert, String host, int port) => true;
+      return client;
+    };
   }
 
-  static const int defaultTimeout = 5000;
+  static const int defaultTimeout = 50000;
 
   final Dio _dio;
 
@@ -54,6 +62,7 @@ class NetworkService implements INetworkService {
     CancelToken? cancelToken,
     OnParse? onParse,
   }) async {
+    print(request.method.name);
     final options = Options()
       ..method = request.method.name
       ..headers = request.headers ?? <String, dynamic>{}

@@ -1,7 +1,7 @@
-import 'package:cookbook/core/theme/solution_theme.dart';
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
-import 'package:cookbook/extensions/num.dart';
-import 'package:cookbook/generated/assets/fonts.gen.dart';
+import 'package:balancebyte/core/theme/solution_theme.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/extensions/num.dart';
+import 'package:balancebyte/generated/assets/fonts.gen.dart';
 import 'package:flutter/material.dart';
 
 abstract class VendorOneCoreTheme implements SolutionTheme {

@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
 import 'package:flutter/material.dart';
 
 class AuthHeader extends StatelessWidget {

@@ -1,6 +1,6 @@
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
-import 'package:cookbook/widgets/atoms/nutritional_badge.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
+import 'package:balancebyte/widgets/atoms/nutritional_badge.dart';
 import 'package:flutter/material.dart';
 
 class NutritionalBadgesList extends StatelessWidget {

@@ -1,6 +1,6 @@
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/widgets/molecules/custom_checkbox.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/widgets/molecules/custom_checkbox.dart';
 import 'package:flutter/material.dart';
 
 class CustomCheckboxList extends StatefulWidget {
@@ -73,7 +73,8 @@ class CustomCheckboxListState extends State<CustomCheckboxList> {
           );
         }),
         if (widget.selectedOptions.containsKey('Others:') ||
-            widget.selectedOptions.containsKey('Custom Diet:'))
+            widget.selectedOptions.containsKey('Custom Diet:') ||
+            widget.selectedOptions.containsKey('Other Diet:'))
           SizedBox(
             height: 35.0.s,
             child: TextField(
@@ -92,7 +93,9 @@ class CustomCheckboxListState extends State<CustomCheckboxList> {
                   borderSide: BorderSide(color: DefaultPalette.borderColor),
                 ),
               ),
-              enabled: widget.selectedOptions['Others:'] ?? false,
+              enabled: (widget.selectedOptions['Others:'] ?? false) ||
+                  (widget.selectedOptions['Custom Diet:'] ?? false) ||
+                  (widget.selectedOptions['Other Diet:'] ?? false),
             ),
           ),
       ],

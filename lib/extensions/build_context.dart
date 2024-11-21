@@ -1,4 +1,4 @@
-import 'package:cookbook/generated/l10n.dart';
+import 'package:balancebyte/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 extension ThemeGetter on BuildContext {

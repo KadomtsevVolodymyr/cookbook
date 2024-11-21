@@ -1,6 +1,6 @@
-import 'package:cookbook/data/model/recipe_item_model.dart';
-import 'package:cookbook/presentation/single_recipe_screen/single_recipe_screen.dart';
-import 'package:cookbook/widgets/molecules/recipe_item.dart';
+import 'package:balancebyte/data/model/recipe_item_model.dart';
+import 'package:balancebyte/presentation/single_recipe_screen/single_recipe_screen.dart';
+import 'package:balancebyte/widgets/molecules/recipe_item.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 

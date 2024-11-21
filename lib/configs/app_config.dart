@@ -11,18 +11,18 @@ class AppConfig {
   /// Set of environment data sets.
   Map<EnvironmentType, EnvironmentValues> get environmentsData => {
         EnvironmentType.DEV: const EnvironmentValues(
-          gatewayUrl: 'https://jsonplaceholder.org',
-          portalUrl: 'https://jsonplaceholder.org',
+          gatewayUrl: 'https://18.224.17.251/api/',
+          portalUrl: 'https://18.224.17.251/api/',
           hiveBoxPrefix: 'dev_',
         ),
         EnvironmentType.PROD: const EnvironmentValues(
-          gatewayUrl: 'https://jsonplaceholder.org',
-          portalUrl: 'https://jsonplaceholder.org',
+          gatewayUrl: 'https://18.224.17.251/api/',
+          portalUrl: 'https://18.224.17.251/api/',
           hiveBoxPrefix: 'prod_',
         ),
         EnvironmentType.UAT: const EnvironmentValues(
-          gatewayUrl: 'https://jsonplaceholder.org',
-          portalUrl: 'https://jsonplaceholder.org',
+          gatewayUrl: 'https://18.224.17.251/api/',
+          portalUrl: 'https://18.224.17.251/api/',
           hiveBoxPrefix: 'uat_',
         ),
       };

@@ -1,15 +1,15 @@
-import 'package:cookbook/data/model/menu_item.dart';
-import 'package:cookbook/data/model/recipe_item_model.dart';
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
-import 'package:cookbook/presentation/account_screen/account_screen.dart';
-import 'package:cookbook/widgets/atoms/spacing.dart';
-import 'package:cookbook/widgets/molecules/custom_form_field.dart';
-import 'package:cookbook/widgets/organisms/custom_appbar.dart';
-import 'package:cookbook/widgets/organisms/filter_drawer.dart';
-import 'package:cookbook/widgets/organisms/filter_options.dart';
-import 'package:cookbook/widgets/organisms/recipe_list.dart';
-import 'package:cookbook/widgets/organisms/screen_side_offset.dart';
+import 'package:balancebyte/data/model/menu_item.dart';
+import 'package:balancebyte/data/model/recipe_item_model.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
+import 'package:balancebyte/presentation/account_screen/account_screen.dart';
+import 'package:balancebyte/widgets/atoms/spacing.dart';
+import 'package:balancebyte/widgets/molecules/custom_form_field.dart';
+import 'package:balancebyte/widgets/organisms/custom_appbar.dart';
+import 'package:balancebyte/widgets/organisms/filter_drawer.dart';
+import 'package:balancebyte/widgets/organisms/filter_options.dart';
+import 'package:balancebyte/widgets/organisms/recipe_list.dart';
+import 'package:balancebyte/widgets/organisms/screen_side_offset.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 

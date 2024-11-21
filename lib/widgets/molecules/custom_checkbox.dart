@@ -1,5 +1,5 @@
-import 'package:cookbook/extensions/num.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
+import 'package:balancebyte/extensions/num.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
 import 'package:flutter/material.dart';
 
 class CustomCheckbox extends StatelessWidget {

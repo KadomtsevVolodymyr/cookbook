@@ -34,7 +34,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameIncrorrect": MessageLookupByLibrary.simpleMessage(
             "Name must be at least 3 characters long."),
         "welcomeToCookbook":
-            MessageLookupByLibrary.simpleMessage("Welcome to Cookbook"),
+            MessageLookupByLibrary.simpleMessage("Welcome to Balance Byte"),
         "welcome_description": MessageLookupByLibrary.simpleMessage(
             "Discover nutritious, delicious, and easy-to-make recipes tailored to your lifestyle. Whether you\'re looking to fuel up, tone up, or simply eat healthier, Cookbook is here to guide you every step of the way.!")
       };

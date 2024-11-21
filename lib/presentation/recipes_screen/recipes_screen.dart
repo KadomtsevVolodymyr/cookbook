@@ -1,5 +1,5 @@
 import 'package:auto_route/annotations.dart';
-import 'package:cookbook/presentation/recipes_screen/recipes_layout.dart';
+import 'package:balancebyte/presentation/recipes_screen/recipes_layout.dart';
 import 'package:flutter/material.dart';
 
 @RoutePage()

@@ -1,9 +1,11 @@
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
-import 'package:cookbook/presentation/main_screen/main_screen.dart';
-import 'package:cookbook/presentation/recipes_screen/recipes_screen.dart';
-import 'package:cookbook/presentation/tips_screen/tips_screen.dart';
-import 'package:cookbook/widgets/molecules/custom_navbar_item.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
+import 'package:balancebyte/presentation/forum/community_screen/community_screen.dart';
+import 'package:balancebyte/presentation/main_screen/main_screen.dart';
+import 'package:balancebyte/presentation/recipes_screen/recipes_screen.dart';
+import 'package:balancebyte/presentation/scanner_screen/scanner_screen.dart';
+import 'package:balancebyte/presentation/tips_screen/tips_screen.dart';
+import 'package:balancebyte/widgets/molecules/custom_navbar_item.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
@@ -58,8 +60,8 @@ class _HomeLayoutState extends State<HomeLayout> {
       const MainScreen(),
       const RecipesScreen(),
       const TipsScreen(),
-      Container(),
-      Container(),
+      const ScannerScreen(),
+      const CommunityScreen(),
     ];
   }
 

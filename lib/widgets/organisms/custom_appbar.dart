@@ -1,8 +1,7 @@
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
-import 'package:cookbook/widgets/atoms/spacing.dart';
-import 'package:cookbook/widgets/organisms/screen_side_offset.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
+import 'package:balancebyte/widgets/atoms/spacing.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -10,6 +9,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget icon;
   final VoidCallback onIconTap;
   final bool iconBack;
+  final String? secondText;
 
   const CustomAppBar({
     required this.title,
@@ -17,6 +17,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     required this.onIconTap,
     this.iconBack = false,
     super.key,
+    this.secondText,
   });
 
   @override
@@ -49,12 +50,24 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         ],
       ),
       title: iconBack
-          ? Text(
-              title,
-              style: theme.headlineLarge?.copyWith(
-                color: DefaultPalette.kDarkGreen,
-              ),
-              textAlign: TextAlign.center,
+          ? Column(
+              children: [
+                Text(
+                  title,
+                  style: theme.headlineLarge?.copyWith(
+                    color: DefaultPalette.kDarkGreen,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                if (secondText != null)
+                  Text(
+                    "(123)",
+                    style: theme.titleMedium?.copyWith(
+                      color: DefaultPalette.inactiveTextColor,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+              ],
             )
           : null,
       actions: [

@@ -1,4 +1,4 @@
-import 'package:cookbook/extensions/extensions.dart';
+import 'package:balancebyte/extensions/extensions.dart';
 import 'package:flutter/widgets.dart';
 
 class Spacing {
@@ -12,6 +12,7 @@ class Spacing {
   static final spacing4 = SizedBox(height: 4.0.s);
 
   static final spacingW24 = SizedBox(width: 24.0.s);
+  static final spacingW16 = SizedBox(width: 16.0.s);
   static final spacingW12 = SizedBox(width: 12.0.s);
   static final spacingW10 = SizedBox(width: 10.0.s);
   static final spacingW8 = SizedBox(width: 8.0.s);

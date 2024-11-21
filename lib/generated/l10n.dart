@@ -60,10 +60,10 @@ class S {
     );
   }
 
-  /// `Welcome to Cookbook`
+  /// `Welcome to Balance Byte`
   String get welcomeToCookbook {
     return Intl.message(
-      'Welcome to Cookbook',
+      'Welcome to Balance Byte',
       name: 'welcomeToCookbook',
       desc: '',
       args: [],

@@ -1,4 +1,4 @@
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
 import 'package:flutter/material.dart';
 
 class GradientText extends StatelessWidget {

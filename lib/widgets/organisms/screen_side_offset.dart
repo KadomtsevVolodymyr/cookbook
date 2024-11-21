@@ -1,4 +1,4 @@
-import 'package:cookbook/extensions/extensions.dart';
+import 'package:balancebyte/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 
 enum ScreenOffsetSide { left, right }

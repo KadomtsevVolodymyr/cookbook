@@ -1,6 +1,6 @@
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
-import 'package:cookbook/widgets/molecules/image_button.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
+import 'package:balancebyte/widgets/molecules/image_button.dart';
 import 'package:flutter/material.dart';
 
 class SocialMediaButtons extends StatelessWidget {

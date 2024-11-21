@@ -43,12 +43,27 @@ class $AssetsIconsGen {
   SvgGenImage get arrowRight =>
       const SvgGenImage('assets/icons/arrow_right.svg');
 
+  /// File path: assets/icons/arrow_right_outlined.svg
+  SvgGenImage get arrowRightOutlined =>
+      const SvgGenImage('assets/icons/arrow_right_outlined.svg');
+
+  /// File path: assets/icons/arrow_right_page.svg
+  SvgGenImage get arrowRightPage =>
+      const SvgGenImage('assets/icons/arrow_right_page.svg');
+
   /// File path: assets/icons/arrow_right_type2.svg
   SvgGenImage get arrowRightType2 =>
       const SvgGenImage('assets/icons/arrow_right_type2.svg');
 
   /// File path: assets/icons/arrow_top.svg
   SvgGenImage get arrowTop => const SvgGenImage('assets/icons/arrow_top.svg');
+
+  /// File path: assets/icons/calendar.svg
+  SvgGenImage get calendar => const SvgGenImage('assets/icons/calendar.svg');
+
+  /// File path: assets/icons/camera_flip.svg
+  SvgGenImage get cameraFlip =>
+      const SvgGenImage('assets/icons/camera_flip.svg');
 
   /// File path: assets/icons/check-box-state2.svg
   SvgGenImage get checkBoxState2 =>
@@ -77,6 +92,13 @@ class $AssetsIconsGen {
   /// File path: assets/icons/close.svg
   SvgGenImage get close => const SvgGenImage('assets/icons/close.svg');
 
+  /// File path: assets/icons/close_camera.svg
+  SvgGenImage get closeCamera =>
+      const SvgGenImage('assets/icons/close_camera.svg');
+
+  /// File path: assets/icons/delete.svg
+  SvgGenImage get delete => const SvgGenImage('assets/icons/delete.svg');
+
   /// File path: assets/icons/facebook_logo.svg
   SvgGenImage get facebookLogo =>
       const SvgGenImage('assets/icons/facebook_logo.svg');
@@ -94,6 +116,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/forum_nav_unnactive.svg
   SvgGenImage get forumNavUnnactive =>
       const SvgGenImage('assets/icons/forum_nav_unnactive.svg');
+
+  /// File path: assets/icons/gallery.svg
+  SvgGenImage get gallery => const SvgGenImage('assets/icons/gallery.svg');
 
   /// File path: assets/icons/goals.svg
   SvgGenImage get goals => const SvgGenImage('assets/icons/goals.svg');
@@ -137,6 +162,14 @@ class $AssetsIconsGen {
   SvgGenImage get informationError =>
       const SvgGenImage('assets/icons/information_error.svg');
 
+  /// File path: assets/icons/lightning_off.svg
+  SvgGenImage get lightningOff =>
+      const SvgGenImage('assets/icons/lightning_off.svg');
+
+  /// File path: assets/icons/lightning_on.svg
+  SvgGenImage get lightningOn =>
+      const SvgGenImage('assets/icons/lightning_on.svg');
+
   /// File path: assets/icons/like.svg
   SvgGenImage get like => const SvgGenImage('assets/icons/like.svg');
 
@@ -146,6 +179,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/low_carb.svg
   SvgGenImage get lowCarb => const SvgGenImage('assets/icons/low_carb.svg');
+
+  /// File path: assets/icons/minus.svg
+  SvgGenImage get minus => const SvgGenImage('assets/icons/minus.svg');
 
   /// File path: assets/icons/nothing_found.svg
   SvgGenImage get nothingFound =>
@@ -201,6 +237,9 @@ class $AssetsIconsGen {
   SvgGenImage get showPassword =>
       const SvgGenImage('assets/icons/show_password.svg');
 
+  /// File path: assets/icons/shutter.svg
+  SvgGenImage get shutter => const SvgGenImage('assets/icons/shutter.svg');
+
   /// File path: assets/icons/statistic_button.svg
   SvgGenImage get statisticButton =>
       const SvgGenImage('assets/icons/statistic_button.svg');
@@ -232,8 +271,12 @@ class $AssetsIconsGen {
         arrowBottom,
         arrowBottomType2,
         arrowRight,
+        arrowRightOutlined,
+        arrowRightPage,
         arrowRightType2,
         arrowTop,
+        calendar,
+        cameraFlip,
         checkBoxState2,
         checkBoxTrnperent,
         checkActive,
@@ -241,11 +284,14 @@ class $AssetsIconsGen {
         checkBoxTrue,
         checkUnnactive,
         close,
+        closeCamera,
+        delete,
         facebookLogo,
         fats,
         filter,
         forumNavActive,
         forumNavUnnactive,
+        gallery,
         goals,
         googleLogo,
         heartEmpty,
@@ -257,9 +303,12 @@ class $AssetsIconsGen {
         homeNavUnnactive,
         hydrationBalance,
         informationError,
+        lightningOff,
+        lightningOn,
         like,
         lowCaloriesIcon,
         lowCarb,
+        minus,
         nothingFound,
         notification,
         personalData,
@@ -274,6 +323,7 @@ class $AssetsIconsGen {
         searchIcon,
         setting,
         showPassword,
+        shutter,
         statisticButton,
         subPlan,
         support,
@@ -323,8 +373,16 @@ class $AssetsImagesGen {
   SvgGenImage get onboardingTop =>
       const SvgGenImage('assets/images/onboarding_top.svg');
 
+  /// File path: assets/images/profile_custom.png
+  AssetGenImage get profileCustom =>
+      const AssetGenImage('assets/images/profile_custom.png');
+
   /// File path: assets/images/tips_bg.svg
   SvgGenImage get tipsBg => const SvgGenImage('assets/images/tips_bg.svg');
+
+  /// File path: assets/images/user_profile.png
+  AssetGenImage get userProfile =>
+      const AssetGenImage('assets/images/user_profile.png');
 
   /// List of all assets
   List<dynamic> get values => [
@@ -338,7 +396,9 @@ class $AssetsImagesGen {
         mealPlan,
         nutritionBalance,
         onboardingTop,
-        tipsBg
+        profileCustom,
+        tipsBg,
+        userProfile
       ];
 }
 

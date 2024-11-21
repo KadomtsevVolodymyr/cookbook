@@ -1,4 +1,4 @@
-import 'package:cookbook/core/failure.dart';
+import 'package:balancebyte/core/failure.dart';
 
 class SavingError extends StorageError {
   SavingError(

@@ -1,13 +1,15 @@
-import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
-import 'package:cookbook/data/model/reusable_card_item.dart';
-import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/generated/assets/assets.gen.dart';
-import 'package:cookbook/presentation/reports_analytics_screen/reports_analytics_screen.dart';
-import 'package:cookbook/widgets/molecules/custom_button.dart';
-import 'package:cookbook/widgets/molecules/gradient_switch.dart';
-import 'package:cookbook/widgets/molecules/reusable_card.dart';
-import 'package:cookbook/widgets/organisms/info_card.dart';
-import 'package:cookbook/widgets/organisms/screen_side_offset.dart';
+import 'package:balancebyte/core/theme/theme_palette/default_palette.dart';
+import 'package:balancebyte/data/model/reusable_card_item.dart';
+import 'package:balancebyte/extensions/extensions.dart';
+import 'package:balancebyte/generated/assets/assets.gen.dart';
+import 'package:balancebyte/presentation/reports_analytics_screen/reports_analytics_screen.dart';
+import 'package:balancebyte/presentation/settings_screen/settings_screen.dart';
+import 'package:balancebyte/presentation/support_screen/support_screen.dart';
+import 'package:balancebyte/widgets/molecules/custom_button.dart';
+import 'package:balancebyte/widgets/molecules/gradient_switch.dart';
+import 'package:balancebyte/widgets/molecules/reusable_card.dart';
+import 'package:balancebyte/widgets/organisms/info_card.dart';
+import 'package:balancebyte/widgets/organisms/screen_side_offset.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
@@ -156,12 +158,18 @@ class _AccountLayoutState extends State<AccountLayout> {
                     ReusableCardItem(
                       text: 'Support',
                       icon: Assets.icons.support.svg(),
-                      onTap: () {},
+                      onTap: () => PersistentNavBarNavigator.pushNewScreen(
+                        context,
+                        screen: const SupportScreen(),
+                      ),
                     ),
                     ReusableCardItem(
                       text: 'Settings',
                       icon: Assets.icons.setting.svg(),
-                      onTap: () {},
+                      onTap: () => PersistentNavBarNavigator.pushNewScreen(
+                        context,
+                        screen: const SettingsScreen(),
+                      ),
                     ),
                   ],
                 ),

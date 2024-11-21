@@ -1,5 +1,4 @@
 import 'package:cookbook/extensions/extensions.dart';
-import 'package:cookbook/presentation/single_recipe_screen/single_recipe_screen.dart';
 import 'package:cookbook/presentation/single_tip_screen/single_tip_screen.dart';
 import 'package:cookbook/widgets/atoms/spacing.dart';
 import 'package:flutter/material.dart';

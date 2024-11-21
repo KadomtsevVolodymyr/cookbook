@@ -2,7 +2,6 @@ import 'package:cookbook/core/theme/theme_palette/default_palette.dart';
 import 'package:cookbook/extensions/extensions.dart';
 import 'package:cookbook/generated/assets/assets.gen.dart';
 import 'package:cookbook/widgets/atoms/spacing.dart';
-import 'package:cookbook/widgets/organisms/screen_side_offset.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {

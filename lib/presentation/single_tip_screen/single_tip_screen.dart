@@ -1,6 +1,4 @@
 import 'package:auto_route/annotations.dart';
-import 'package:cookbook/data/model/recipe_item_model.dart';
-import 'package:cookbook/presentation/single_recipe_screen/single_recipe_layout.dart';
 import 'package:cookbook/presentation/single_tip_screen/single_tip_layout.dart';
 import 'package:flutter/material.dart';
 
